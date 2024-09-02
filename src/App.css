@@ -8,6 +8,10 @@
   width: 100%;
   height: 91px;
   background-color: #23180d;
+  padding: 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .feature {
@@ -23,6 +27,119 @@
   height: 334px;
   color: #fff;
   display: flex;
-  
-  
+}
+
+.paypal {
+  width: 152px;
+  height: 40px;
+  border-radius: 6px;
+  margin: 20px 0;
+  background-color: yellow;
+  color: red;
+}
+
+.paypal span {
+  margin: 0px;
+  color: blue;
+}
+
+.center img {
+  width: 228px;
+  height: 228px;
+}
+
+.underLine {
+  border-bottom: 2px solid #333;
+  /* Çizginin kalınlığı ve rengi */
+  border-color: #fff;
+  padding-bottom: 10px;
+  /* Başlık ve çizgi arasındaki boşluk */
+  margin-bottom: 20px;
+  /* Diğer öğelerle mesafe */
+}
+
+.home {
+  width: 64px;
+  height: 34px;
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.api {
+  width: 50px;
+  height: 34px;
+  margin: 0 28px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.api:hover {
+  background-color: red;
+  transition: background-color 0.7s;
+
+}
+
+.input {
+  height: 34px;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.content {
+  display: flex;
+  /* Flexbox düzenini kullanır */
+  flex-direction: column;
+  /* Elemanları dikeyde sıralar */
+  align-items: center;
+}
+
+.title {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.inputContainer {
+  margin-top: 30px;
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-button {
+  position: absolute;
+  cursor: pointer;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-right: none;
+  background-color: #fff;
+  color: black;
+  bottom: 103.5px;
+  right: 679px;
+ 
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.search-button:hover {
+  background-color: #ccc;
+}
+
+.counters {
+  margin: 20px 0;
+}
+
+.counters span {
+  padding: 0 20px;
+}
+
+.text-primary {
+  margin-bottom: 20px;
 }
