@@ -20,6 +20,8 @@
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 40px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .center {
@@ -102,7 +104,6 @@
 
 .title {
   font-size: 35px;
-  margin-bottom: 10px;
 }
 
 .inputContainer {
@@ -114,14 +115,13 @@
 }
 
 .search-button {
-  position: absolute;
   cursor: pointer;
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-right: none;
   background-color: #fff;
   color: black;
-  bottom:229.5px;
+  bottom: 479.5px;
   right: 679px;
 
 }
@@ -146,4 +146,65 @@
 
 .text-primary {
   margin-bottom: 20px;
+}
+
+.title h4 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #2d2013;
+}
+
+.mealContainer {
+  padding-top: 40px;
+  background-color: #2d2013;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.mealContainer::after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 800px;
+  height: 3px; /* Çizgi kalınlığı */
+  background-color: #fff; /* Çizgi rengi */
+}
+
+.mealSection {
+  display: inline-block;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.mealItems {
+  display: inline;
+
+}
+
+.mealSection img {
+  width: 270px;
+  height: 270px;
+}
+
+.mealSection p {
+  color: orange;
+}
+
+.mealSection p:hover {
+  color: rgb(255, 99, 42);
+}
+
+.mealSection button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
 }

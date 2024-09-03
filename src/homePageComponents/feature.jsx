@@ -1,10 +1,12 @@
 import MealIcon from '../stillImages/meal-icon.png'
-function feature(params) {
+function feature() {
+
     const divStyle = {
         color: "orange",
         backgroundColor: "transparent"
     }
     return (
+        <>
         <div className="feature">
             <div className="center">
                 <img src={MealIcon} />
@@ -19,11 +21,14 @@ function feature(params) {
                     <button className="paypal "> <span>Pay</span> Pal</button>
 
                     <p>Click button above to upgrade free API to premium for $3</p>
-                    <p className='text-primary'>Currently (54 supporters)</p> 
+                    <p className='text-primary'>Currently (54 supporters)</p>
 
                     <div className="divider"></div>
-                    <input className="inputContainer" type="text" />
-                    <button className="search-button">Search</button>
+                    <div>
+                        <input className="inputContainer" type="text" />
+                        <button className="search-button">Search</button>
+                    </div>
+
 
                     <div className="counters">
                         <span>Total Meals:</span>
@@ -39,8 +44,11 @@ function feature(params) {
 
 
             </div>
-
         </div>
+        <div className="title">
+            <h4>Latest Meals</h4>
+        </div>
+        </>
     );
 }
 export default feature;
