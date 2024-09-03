@@ -37,13 +37,13 @@
         },
         {
             "Id": "8",
-            "Name": "15-minute chicken & halloumi burgers",
-            "ImageUrl": "/Meals/Burgers.png"
+            "Name": "Lamb Biryani",
+            "ImageUrl": "/Meals/LambBiryani.png"
         },
         {
             "Id": "9",
-            "Name": "Lamb Biryani",
-            "ImageUrl": "/Meals/LambBiryani.png"
+            "Name": "15-minute chicken & halloumi burgers",
+            "ImageUrl": "/Meals/Burgers.png"
         },
         {
             "Id": "10",
