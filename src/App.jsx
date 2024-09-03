@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import { Routes, Route, Router } from 'react-router-dom';
 
+import Header from "../src/homePageComponents/header"
+
 import Home from '../src/homePageComponents/home'
 import Meal from '../src/mealPageComponents/mealPage'
 import Ingredient from '../src/ingredientComponents/ingredient'
@@ -12,7 +14,7 @@ function App() {
     <>
       {/* <Router> */}
 
-      {/* <Header/> */}
+      <Header/>
 
       <Routes>
 

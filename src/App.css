@@ -33,7 +33,6 @@
   width: 152px;
   height: 40px;
   border-radius: 6px;
-  margin: 20px 0;
   background-color: yellow;
   color: red;
 }
@@ -64,6 +63,11 @@
   background-color: red;
   color: #fff;
   border-radius: 4px;
+  border: none;
+}
+
+.home:hover {
+  transform: scale(1.1);
 }
 
 .api {
@@ -117,9 +121,9 @@
   border-right: none;
   background-color: #fff;
   color: black;
-  bottom: 103.5px;
+  bottom:229.5px;
   right: 679px;
- 
+
 }
 
 .divider {

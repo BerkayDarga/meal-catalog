@@ -1,0 +1,118 @@
+{
+    "meals": [
+        {
+            "Id": "1",
+            "Name": "Blini Pancakes",
+            "ImageUrl": "/Meals/BliniPancakes.png"
+        },
+        {
+            "Id": "2",
+            "Name": "Fish Soup",
+            "ImageUrl": "/Meals/FishSoup.png"
+        },
+        {
+            "Id": "3",
+            "Name": "Lamb Pilaf",
+            "ImageUrl": "/Meals/LambPilaf.png"
+        },
+        {
+            "Id": "4",
+            "Name": "Strawberries Romanoff",
+            "ImageUrl": "/Meals/.png"
+        },
+        {
+            "Id": "5",
+            "Name": "Potato Salad",
+            "ImageUrl": "/Meals/StrawberriesRomanoff.png"
+        },
+        {
+            "Id": "6",
+            "Name": "Beetroot Soup",
+            "ImageUrl": "/Meals/BeetrootSoup.png"
+        },
+        {
+            "Id": "7",
+            "Name": "Cabbage Soup",
+            "ImageUrl": "/Meals/CabbageSoup.png"
+        },
+        {
+            "Id": "8",
+            "Name": "15-minute chicken & halloumi burgers",
+            "ImageUrl": "/Meals/Burgers.png"
+        },
+        {
+            "Id": "9",
+            "Name": "Lamb Biryani",
+            "ImageUrl": "/Meals/LambBiryani.png"
+        },
+        {
+            "Id": "10",
+            "Name": "Sticky Toffee Pudding",
+            "ImageUrl": "/Meals/StickyToffeePudding.png"
+        },
+        {
+            "Id": "11",
+            "Name": "Beef Brisket Pot Roast",
+            "ImageUrl": "/Meals/BeefBrisketPotRoast.png"
+        },
+        {
+            "ıd": "12",
+            "name": "Burek",
+            "ImageUrl": "/Meals/Burek.png"
+        }
+    ],
+    "Ingredients":[
+        {
+            "Id":"1",
+            "Name":"Rice",
+            "IngredientImage":"Rice.png"
+        },
+        {
+            "Id":"2",
+            "Name":"Egg",
+            "IngredientImage":"Egg.png"
+        },
+        {
+            "Id":"3",
+            "Name":"Minced Beef",
+            "IngredientImage":"MincedBeef.png"
+        },
+        {
+            "Id":"4",
+            "Name":"Olive Oil",
+            "IngredientImage":""
+        },
+        {
+            "Id":"5",
+            "Name":"Strawberries",
+            "IngredientImage":""
+        },
+        {
+            "Id":"6",
+            "Name":"Butter",
+            "IngredientImage":""
+        },
+        {
+            "Id":"7",
+            "Name":"Garlic",
+            "IngredientImage":""
+        },
+        {
+            "Id":"8",
+            "Name":"Potatoes",
+            "IngredientImage":""
+        },
+        {
+            "Id":"9",
+            "Name":"Chicken Breasts",
+            "IngredientImage":""
+        },
+        {
+            "Id":"10",
+            "Name":"Beef Brisket",
+            "IngredientImage":""
+        }
+    ]
+}
+
+
