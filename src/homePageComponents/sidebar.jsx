@@ -7,7 +7,6 @@ function sidebar(meals) {
                 <img src={image} />
                 <p>{name}</p>
             </button>
-
         </div>
     )
 

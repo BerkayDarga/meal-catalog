@@ -107,74 +107,74 @@
         {
             "Id": "1",
             "Name": "Rice",
-            "IngredientImage": "Rice.png"
+            "IngredientImage": "/Ingredients/Rice.png"
         },
         {
             "Id": "2",
             "Name": "Egg",
-            "IngredientImage": "Egg.png"
+            "IngredientImage": "/Ingredients/Egg.png"
         },
         {
             "Id": "3",
             "Name": "Minced Beef",
-            "IngredientImage": "MincedBeef.png"
+            "IngredientImage": "/Ingredients/MincedBeef.png"
         },
         {
             "Id": "4",
             "Name": "Olive Oil",
-            "IngredientImage": "OliveOil.png"
+            "IngredientImage": "/Ingredients/OliveOil.png"
         },
         {
             "Id": "5",
             "Name": "Strawberries",
-            "IngredientImage": "Strawberries.png"
+            "IngredientImage": "/Ingredients/Strawberries.png"
         },
         {
             "Id": "6",
             "Name": "Butter",
-            "IngredientImage": "Butter.png"
+            "IngredientImage": "/Ingredients/Butter.png"
         },
         {
             "Id": "7",
             "Name": "Garlic",
-            "IngredientImage": "Garlic.png"
+            "IngredientImage": "/Ingredients/Garlic.png"
         },
         {
             "Id": "8",
             "Name": "Potatoes",
-            "IngredientImage": "Potatoes.png"
+            "IngredientImage": "/Ingredients/Potatoes.png"
         },
         {
             "Id": "9",
             "Name": "Chicken Breasts",
-            "IngredientImage": "ChickenBreasts.png"
+            "IngredientImage": "/Ingredients/ChickenBreasts.png"
         },
         {
             "Id": "10",
             "Name": "Beef Brisket",
-            "IngredientImage": "BeefBrisket.png"
+            "IngredientImage": "/Ingredients/BeefBrisket.png"
         }
     ],
     "popualarIngredients": [
         {
             "Id": "5",
             "Name": "Strawberries",
-            "IngredientImage": "Strawberries.png"
+            "IngredientImage": "/Ingredients/Strawberries.png"
         },
         {
             "Id": "3",
             "Name": "Minced Beef",
-            "IngredientImage": "MincedBeef.png"
+            "IngredientImage": "/Ingredients/MincedBeef.png"
         },
         {
             "Id": "7",
             "Name": "Garlic",
-            "IngredientImage": "Garlic.png"
+            "IngredientImage": "/Ingredients/Garlic.png"
         },
         {
             "Id": "10",
             "Name": "Beef Brisket",
-            "IngredientImage": "BeefBrisket.png"
+            "IngredientImage": "/Ingredients/BeefBrisket.png"
         }
     ]
 }

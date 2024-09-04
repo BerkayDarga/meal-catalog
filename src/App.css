@@ -171,8 +171,8 @@
   left: 0;
   bottom: 0;
   width: 800px;
-  height: 3px; /* Çizgi kalınlığı */
-  background-color: #fff; /* Çizgi rengi */
+  height: 2px;
+  background-color: #fff;
 }
 
 .mealSection {
@@ -207,4 +207,34 @@
   margin: 0;
   font: inherit;
   cursor: pointer;
+}
+
+.PopularIngredientsTitle {
+  color: #fff;
+  background-color: #2d2013;
+  display: flex;
+  justify-content: center;
+}
+
+.popularIngredients img {
+  width: 270px;
+  height: 270px;
+}
+
+.popularIngredients {
+  margin-left: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.popularIngredient {
+  display: flex;
+  background-color: #2d2013;
+  padding-top: 30px;
+  color: orange;
+  justify-content: center;
+}
+
+.popularIngredient :hover {
+  color: rgb(255, 99, 42);
 }
