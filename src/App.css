@@ -238,3 +238,36 @@
 .popularIngredient :hover {
   color: rgb(255, 99, 42);
 }
+
+.RandomMealsTitle {
+  display: flex;
+  justify-content: center;
+  background-color: #2d2013;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.randomMeals {
+  color: orange;
+  padding-top: 40px;
+  background-color: #2d2013;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.randomMeal img {
+  width: 270px;
+  height: 270px;
+}
+
+.randomMeal {
+  display: inline-block;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
