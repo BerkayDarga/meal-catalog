@@ -271,3 +271,28 @@
   margin-bottom: 30px;
   text-align: center;
 }
+
+.outerWrapper {
+  background-color: #2d2013;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.outerWrapper h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  background-color: #2d2013;
+  margin-left: 20px;
+}
+
+.flags {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}

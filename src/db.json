@@ -3,7 +3,8 @@
         {
             "Id": "1",
             "Name": "Blini Pancakes",
-            "ImageUrl": "/Meals/BliniPancakes.png"
+            "ImageUrl": "/Meals/BliniPancakes.png",
+            "country":"turk"
         },
         {
             "Id": "2",
@@ -13,7 +14,24 @@
         {
             "Id": "3",
             "Name": "Lamb Pilaf",
-            "ImageUrl": "/Meals/LambPilaf.png"
+            "ImageUrl": "/Meals/LambPilaf.png",
+            "ingredint": [
+                {
+                    "Id": "1",
+                    "Name": "Rice",
+                    "IngredientImage": "/Ingredients/Rice.png"
+                },
+                {
+                    "Id": "4",
+                    "Name": "Olive Oil",
+                    "IngredientImage": "/Ingredients/OliveOil.png"
+                },
+                {
+                    "Id": "6",
+                    "Name": "Butter",
+                    "IngredientImage": "/Ingredients/Butter.png"
+                }
+            ]
         },
         {
             "Id": "4",
@@ -58,7 +76,14 @@
         {
             "Id": "12",
             "Name": "Burek",
-            "ImageUrl": "/Meals/Burek.png"
+            "ImageUrl": "/Meals/Burek.png",
+            "ingredint":[
+                {
+                    "Id": "4",
+                    "Name": "Olive Oil",
+                    "IngredientImage": "/Ingredients/OliveOil.png"
+                }
+            ]
         }
     ],
     "latestMeals": [

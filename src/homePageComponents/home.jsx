@@ -104,6 +104,7 @@ function home() {
             </div>
             <div>
             </div>
+            <Wrapper />
             <Footer />
         </div>
     );
