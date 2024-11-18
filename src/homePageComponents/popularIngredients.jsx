@@ -4,10 +4,13 @@ function popularIngredients(ingredients) {
     const ingredientName = ingredients.ingredientName
 
     return (
-        <div className="popularIngredients">
-            <img src={img} />
-            <p>{ingredientName}</p>
-        </div>
+        <button className="popularIngredientsButton">
+            <div className="popularIngredients">
+                <img src={img} />
+                <p>{ingredientName}</p>
+            </div>
+        </button>
+
     );
 }
 export default popularIngredients;

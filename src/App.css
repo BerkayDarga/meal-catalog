@@ -66,6 +66,7 @@
   color: #fff;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .home:hover {
@@ -80,6 +81,7 @@
   color: #fff;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .api:hover {
@@ -166,15 +168,6 @@
   padding-bottom: 20px;
 }
 
-.mealContainer::after {
-  content: "";
-  left: 0;
-  bottom: 0;
-  width: 800px;
-  height: 2px;
-  background-color: #fff;
-}
-
 .mealSection {
   display: inline-block;
   margin-left: 40px;
@@ -209,6 +202,15 @@
   cursor: pointer;
 }
 
+.popularIngredientsButton {
+  border: none;
+  background-color: transparent;
+}
+
+.popularIngredientsButton:hover {
+  color: orange;
+}
+
 .PopularIngredientsTitle {
   color: #fff;
   background-color: #2d2013;
@@ -219,6 +221,10 @@
 .popularIngredients img {
   width: 270px;
   height: 270px;
+}
+
+.popularIngredients p {
+  color: white;
 }
 
 .popularIngredients {
@@ -233,6 +239,12 @@
   padding-top: 30px;
   color: orange;
   justify-content: center;
+}
+
+.popularIngredientsButton {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .popularIngredient :hover {
@@ -270,6 +282,17 @@
   margin-left: 40px;
   margin-bottom: 30px;
   text-align: center;
+}
+
+.randomMealButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.randomMealButton:hover {
+  color: darkorange;
 }
 
 .outerWrapper {

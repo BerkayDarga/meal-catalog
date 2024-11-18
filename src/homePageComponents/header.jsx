@@ -11,8 +11,9 @@ const homePage = () => {
     <div className="header">
       <img src={HeaderImage} />
       <div className="navbar">
-        <button className='home'>Home</button>
-        <button className='api'>API</button>
+        <button onClick={() => window.location.href = 'http://localhost:3000/'} className='home'>Home</button>
+        <button onClick={() => window.location.href = 'http://localhost:4000/meals'}
+          className='api'>API</button>
         <input className='input' type="text" placeholder='Search' id="" />
       </div>
 

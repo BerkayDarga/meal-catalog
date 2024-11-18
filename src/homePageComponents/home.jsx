@@ -35,6 +35,7 @@ function home() {
             .catch(error => console.log(error))
     }, []);
 
+    // random meals
     useEffect(() => {
         fetch("http://localhost:4000/meals")
             .then(response => response.json())
@@ -61,12 +62,35 @@ function home() {
             .catch(error => console.log(error))
     }, []);
 
+    //random ingredients
+
     useEffect(() => {
         fetch("http://localhost:4000/Ingredients")
             .then(response => response.json())
-            .then(dataRandom => setRandomIngredients(dataRandom))
-            .catch(error => console.console.log(error))
-    })
+            .then(veri => {
+                setRandomIngredients(veri)
+                const allMeals = veri;
+                const selectedIngredients = [];
+                const allMealsCopy = [...allMeals];
+
+                for (let i = 0; i < 4; i++) {
+                    if (allMealsCopy.length === 0) break; // Eğer seçim yapılacak yemek kalmadıysa döngüden çık
+
+                    // Rastgele bir index seç
+                    const randomIndex = Math.floor(Math.random() * allMealsCopy.length);
+
+                    // Seçilen öğeyi al ve diziden çıkar
+                    const selectedIngredient = allMealsCopy[randomIndex];
+                    selectedIngredients.push(selectedIngredient);
+                    allMealsCopy.splice(randomIndex, 1); // Seçilen öğeyi diziden kaldır
+                }
+                setRandomIngredients(selectedIngredients);
+
+            })
+            .catch(error => console.log(error))
+    }, []);
+
+
 
     return (
         <div className="">
@@ -94,7 +118,6 @@ function home() {
             </div>
             <div className="RandomMealsTitle">
                 <RandomIngredientsTitle />
-
             </div>
 
             <div className="popularIngredient mealContainer">
@@ -102,8 +125,7 @@ function home() {
                     <RandomIngredients image={randoms.IngredientImage} name={randoms.Name} />
                 ))}
             </div>
-            <div>
-            </div>
+
             <Wrapper />
             <Footer />
         </div>

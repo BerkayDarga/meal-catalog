@@ -5,22 +5,22 @@ import { Routes, Route, Router } from 'react-router-dom';
 import Header from "../src/homePageComponents/header"
 
 import Home from '../src/homePageComponents/home'
-import Meal from '../src/mealPageComponents/mealPage'
+import Meal from './mealPageComponents/meal'
 import Ingredient from '../src/ingredientComponents/ingredient'
 
 function App() {
 
   return (
     <>
-      {/* <Router> */}
+      {/* <Routerx> */}
 
-      <Header/>
+      <Header />
 
       <Routes>
 
         <Route path='/' element={<Home />} />
-        <Route path='/meal' element={<Meal />} />
-        <Route path='/ingredient' element={<Ingredient />}></Route>
+        <Route path='/meal/:idMeal' element={<Meal />} />
+        <Route path='/ingredient/:idIngredient' element={<Ingredient />} />
 
 
       </Routes>
