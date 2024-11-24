@@ -48,7 +48,7 @@ function feature() {
             <div className="title">
                 <h4>Latest Meals</h4>
             </div>
-            
+
         </>
     );
 }

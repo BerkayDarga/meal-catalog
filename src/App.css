@@ -319,3 +319,42 @@
   justify-content: center;
   margin-bottom: 50px;
 }
+
+.mealDetail {
+  background-color: #2d2013;
+  color: #fff;
+  display: flex;
+  gap: 30px;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mealDetail img {
+  width: 400px;
+  height: 400px;
+}
+
+.mealWrapper {
+  display: flex;
+}
+
+.aa {
+  margin: 20px 0px;
+}
+
+.mealDetailRight {
+  margin-left: 20px;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.instructions p{
+  padding-bottom: 40px;
+}

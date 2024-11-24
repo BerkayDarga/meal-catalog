@@ -9,25 +9,40 @@ import RandomIngredients from './randomIngredients'
 import RandomMealsTitle from './randomMealsTitle'
 import RandomIngredientsTitle from './randomIngredientsTitle';
 import Wrapper from './wrapper'
+import { useNavigate, useParams } from 'react-router-dom';
 
 
 
 function home() {
 
-    const [meals, setMeals] = useState([]);
+    const [latestMeals, setLatestMeals] = useState([]);
     const [popularIngredients, setPopularIngredients] = useState([]);
     const [randomMeals, setRandomMeals] = useState([]);
     const [randomIngredients, setRandomIngredients] = useState([]);
 
+    const [meals, setMeals] = useState([]);
+    const { idMeal } = useParams();
+    const navigation = useNavigate();
+    const productDetailPage = (tt) => {
+        navigation(`/mealDetail/${tt}`)
+    }
+
+    useEffect(() => {
+        fetch(`http://localhost:4000/meals?Id=${idMeal}`)
+            .then(aa => aa.json())
+            .then(mealData => setMeals(mealData))
+            .catch(error => console.error(error))
+    }, []);
+
     useEffect(() => {   //useEffect bileşen ilk render edildiğinde bir kez çalışır
-        fetch("http://localhost:4000/latestMeals")
+        fetch("http://localhost:4000/meals?latestMeals=true")
             .then(response => response.json())
-            .then(data => setMeals(data))
+            .then(data => setLatestMeals(data))
             .catch(error => console.log(error))
     }, []);
 
     useEffect(() => {
-        fetch("http://localhost:4000/popualarIngredients")
+        fetch("http://localhost:4000/Ingredients?popualarIngredients=true")
             .then(response => response.json())
             .then(datas => {
                 setPopularIngredients(datas)
@@ -90,14 +105,20 @@ function home() {
             .catch(error => console.log(error))
     }, []);
 
+    const navigate = useNavigate();
+
+    const mealButtonClick = (idclickmeal) => {
+        navigate(`/mealDetail/${idclickmeal}`);
+    }
+    
 
 
     return (
         <div className="">
             <Feature />
             <div className="mealContainer">
-                {meals.map(meal => (
-                    <Sidebar image={meal.ImageUrl} name={meal.Name} />
+                {latestMeals.map(meal => (
+                    <Sidebar image={meal.ImageUrl} name={meal.Name} buttonclick={() => mealButtonClick(meal.Id)} />
                 ))}
             </div>
             <div className="">
@@ -125,8 +146,6 @@ function home() {
                     <RandomIngredients image={randoms.IngredientImage} name={randoms.Name} />
                 ))}
             </div>
-
-            <Wrapper />
             <Footer />
         </div>
     );

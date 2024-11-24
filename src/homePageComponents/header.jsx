@@ -17,7 +17,6 @@ const homePage = () => {
         <input className='input' type="text" placeholder='Search' id="" />
       </div>
 
-
     </div>
 
   );
