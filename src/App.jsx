@@ -8,6 +8,7 @@ import Home from '../src/homePageComponents/home'
 import Meal from './mealPageComponents/meal'
 import Ingredient from '../src/ingredientComponents/ingredient'
 import Wrapper from '../src/homePageComponents/wrapper'
+import UrunEkleme from '../src/UrunEklemeComponent/UrunEkleme'
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/mealDetail/:idMeal' element={<Meal />} />
         <Route path='/ingredientDetail/:idIngredient' element={<Ingredient />} />
-
+        <Route path='/urunEkleme' element={<UrunEkleme />} />
       </Routes>
       <Wrapper />
     </>

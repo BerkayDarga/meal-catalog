@@ -28,7 +28,7 @@ function home() {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:4000/meals?Id=${idMeal}`)
+        fetch(`http://localhost:4000/meals?id=${idMeal}`)
             .then(aa => aa.json())
             .then(mealData => setMeals(mealData))
             .catch(error => console.error(error))
@@ -110,15 +110,17 @@ function home() {
     const mealButtonClick = (idclickmeal) => {
         navigate(`/mealDetail/${idclickmeal}`);
     }
-    
 
+    const urunEklemeClick = () => {
+        navigate(`/urunEkleme`)
+    }
 
     return (
         <div className="">
             <Feature />
             <div className="mealContainer">
                 {latestMeals.map(meal => (
-                    <Sidebar image={meal.ImageUrl} name={meal.Name} buttonclick={() => mealButtonClick(meal.Id)} />
+                    <Sidebar image={meal.ImageUrl} name={meal.Name} buttonclick={() => mealButtonClick(meal.id)} />
                 ))}
             </div>
             <div className="">

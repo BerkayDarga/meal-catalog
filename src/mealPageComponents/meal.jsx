@@ -9,7 +9,7 @@ function mealPage() {
     const { idMeal } = useParams();
 
     useEffect(() => {
-        fetch(`http://localhost:4000/meals?Id=${idMeal}`)
+        fetch(`http://localhost:4000/meals?id=${idMeal}`)
             .then(aa => aa.json())
             .then(mealData => setMeals(mealData))
             .catch(error => console.error(error))
@@ -26,7 +26,7 @@ function mealPage() {
     return (
         <div className="">
             {meals.map(mealss => (
-                <div className="mealDetail" key={mealss.Id}>
+                <div className="mealDetail" key={mealss.id}>
                     <div className="mealWrapper">
                         <div className="mealDetailLeft">
                             <h1 className="aa">{mealss.Name}</h1>

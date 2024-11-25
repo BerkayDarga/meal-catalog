@@ -1,445 +1,569 @@
 {
-    "meals": [
+  "meals": [
+    {
+      "id": "1",
+      "Name": "Blini Pancakes",
+      "ImageUrl": "/Meals/BliniPancakes.png",
+      "country": "turk",
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "latestMeals": true,
+      "ingredient": [
         {
-            "Id": "1",
-            "Name": "Blini Pancakes",
-            "ImageUrl": "/Meals/BliniPancakes.png",
-            "country": "turk",
-            "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-            "latestMeals": true,
-            "ingredient": [
-                {
-                    "Id": "2",
-                    "Name": "Egg",
-                    "IngredientImage": "/Ingredients/Egg.png"
-                },
-                {
-                    "Id": "6",
-                    "Name": "Butter",
-                    "IngredientImage": "/Ingredients/Butter.png"
-                }
-            ]
+          "id": "2",
+          "Name": "Egg",
+          "IngredientImage": "/Ingredients/Egg.png"
         },
         {
-            "Id": "2",
-            "Name": "Fish Soup",
-            "ImageUrl": "/Meals/FishSoup.png",
-            "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-            "latestMeals": true,
-            "ingredient": [
-                {
-                    "Id": "2",
-                    "Name": "Egg",
-                    "IngredientImage": "/Ingredients/Egg.png"
-                },
-                {
-                    "Id": "3",
-                    "Name": "Minced Beef",
-                    "IngredientImage": "/Ingredients/MincedBeef.png"
-                },
-                {
-                    "Id": "4",
-                    "Name": "Olive Oil",
-                    "IngredientImage": "/Ingredients/OliveOil.png"
-                },
-                {
-                    "Id": "6",
-                    "Name": "Butter",
-                    "IngredientImage": "/Ingredients/Butter.png"
-                },
-                {
-                    "Id": "8",
-                    "Name": "Potatoes",
-                    "IngredientImage": "/Ingredients/Potatoes.png"
-                }
-            ]
-        },
-        {
-            "Id": "3",
-            "Name": "Lamb Pilaf",
-            "ImageUrl": "/Meals/LambPilaf.png",
-            "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-            "latestMeals": true,
-            "ingredient": [
-                {
-                    "Id": "1",
-                    "Name": "Rice",
-                    "IngredientImage": "/Ingredients/Rice.png"
-                },
-                {
-                    "Id": "4",
-                    "Name": "Olive Oil",
-                    "IngredientImage": "/Ingredients/OliveOil.png"
-                },
-                {
-                    "Id": "6",
-                    "Name": "Butter",
-                    "IngredientImage": "/Ingredients/Butter.png"
-                },
-                {
-                    "Id": "3",
-                    "Name": "Minced Beef",
-                    "IngredientImage": "/Ingredients/MincedBeef.png"
-                },
-                {
-                    "Id": "4",
-                    "Name": "Olive Oil",
-                    "IngredientImage": "/Ingredients/OliveOil.png"
-                },
-                {
-                    "Id": "6",
-                    "Name": "Butter",
-                    "IngredientImage": "/Ingredients/Butter.png"
-                },
-                {
-                    "Id": "7",
-                    "Name": "Garlic",
-                    "IngredientImage": "/Ingredients/Garlic.png"
-                },
-                {
-                    "Id": "10",
-                    "Name": "Beef Brisket",
-                    "IngredientImage": "/Ingredients/BeefBrisket.png"
-                }
-            ]
-        },
-        {
-            "Id": "4",
-            "Name": "Potato Salad",
-            "ImageUrl": "/Meals/PotatoSalad.png",
-            "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-            "latestMeals": false,
-            "ingredient": [
-                {
-                    "Id": "4",
-                    "Name": "Olive Oil",
-                    "IngredientImage": "/Ingredients/OliveOil.png"
-                },
-                {
-                    "Id": "8",
-                    "Name": "Potatoes",
-                    "IngredientImage": "/Ingredients/Potatoes.png"
-                }
-            ]
-        },
-        {
-            "Id": "5",
-            "Name": "Strawberries Roman off",
-            "ImageUrl": "/Meals/StrawberriesRomanoff.png",
-            "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-            "latestMeals": true,
-            "ingredient": [
-                {
-                    "Id": "5",
-                    "Name": "Strawberries",
-                    "IngredientImage": "/Ingredients/Strawberries.png"
-                },
-                {
-                    "Id": "6",
-                    "Name": "Butter",
-                    "IngredientImage": "/Ingredients/Butter.png"
-                }
-            ]
-        },
-        {
-            "Id": "6",
-            "Name": "Beetroot Soup",
-            "ImageUrl": "/Meals/BeetrootSoup.png",
-            "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-            "latestMeals": false,
-            "ingredient": [
-                {
-                    "Id": "4",
-                    "Name": "Olive Oil",
-                    "IngredientImage": "/Ingredients/OliveOil.png"
-                },
-                {
-                    "Id": "5",
-                    "Name": "Strawberries",
-                    "IngredientImage": "/Ingredients/Strawberries.png"
-                },
-                {
-                    "Id": "6",
-                    "Name": "Butter",
-                    "IngredientImage": "/Ingredients/Butter.png"
-                }
-            ]
-        },
-        {
-            "Id": "7",
-            "Name": "Cabbage Soup",
-            "ImageUrl": "/Meals/CabbageSoup.png",
-            "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-            "latestMeals": false,
-            "ingredient": [
-                {
-                    "Id": "2",
-                    "Name": "Egg",
-                    "IngredientImage": "/Ingredients/Egg.png"
-                },
-                {
-                    "Id": "4",
-                    "Name": "Olive Oil",
-                    "IngredientImage": "/Ingredients/OliveOil.png"
-                },
-                {
-                    "Id": "6",
-                    "Name": "Butter",
-                    "IngredientImage": "/Ingredients/Butter.png"
-                },
-                {
-                    "Id": "8",
-                    "Name": "Potatoes",
-                    "IngredientImage": "/Ingredients/Potatoes.png"
-                },
-                {
-                    "Id": "9",
-                    "Name": "Chicken Breasts",
-                    "IngredientImage": "/Ingredients/ChickenBreasts.png"
-                }
-            ]
-        },
-        {
-            "Id": "8",
-            "Name": "Lamb Biryani",
-            "ImageUrl": "/Meals/LambBiryani.png",
-            "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-            "latestMeals": true,
-            "ingredient": [
-                {
-                    "Id": "1",
-                    "Name": "Rice",
-                    "IngredientImage": "/Ingredients/Rice.png"
-                },
-                {
-                    "Id": "2",
-                    "Name": "Egg",
-                    "IngredientImage": "/Ingredients/Egg.png"
-                },
-                {
-                    "Id": "3",
-                    "Name": "Minced Beef",
-                    "IngredientImage": "/Ingredients/MincedBeef.png"
-                },
-                {
-                    "Id": "4",
-                    "Name": "Olive Oil",
-                    "IngredientImage": "/Ingredients/OliveOil.png"
-                },
-                {
-                    "Id": "6",
-                    "Name": "Butter",
-                    "IngredientImage": "/Ingredients/Butter.png"
-                },
-                {
-                    "Id": "7",
-                    "Name": "Garlic",
-                    "IngredientImage": "/Ingredients/Garlic.png"
-                },
-                {
-                    "Id": "8",
-                    "Name": "Potatoes",
-                    "IngredientImage": "/Ingredients/Potatoes.png"
-                },
-                {
-                    "Id": "10",
-                    "Name": "Beef Brisket",
-                    "IngredientImage": "/Ingredients/BeefBrisket.png"
-                }
-            ]
-        },
-        {
-            "Id": "9",
-            "Name": "15-minute chicken & halloumi burgers",
-            "ImageUrl": "/Meals/Burgers.png",
-            "latestMeals": true,
-            "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-            "ingredient": [
-                {
-                    "Id": "1",
-                    "Name": "Rice",
-                    "IngredientImage": "/Ingredients/Rice.png"
-                },
-                {
-                    "Id": "2",
-                    "Name": "Egg",
-                    "IngredientImage": "/Ingredients/Egg.png"
-                },
-                {
-                    "Id": "3",
-                    "Name": "Minced Beef",
-                    "IngredientImage": "/Ingredients/MincedBeef.png"
-                },
-                {
-                    "Id": "4",
-                    "Name": "Olive Oil",
-                    "IngredientImage": "/Ingredients/OliveOil.png"
-                },
-                {
-                    "Id": "6",
-                    "Name": "Butter",
-                    "IngredientImage": "/Ingredients/Butter.png"
-                },
-                {
-                    "Id": "8",
-                    "Name": "Potatoes",
-                    "IngredientImage": "/Ingredients/Potatoes.png"
-                },
-                {
-                    "Id": "9",
-                    "Name": "Chicken Breasts",
-                    "IngredientImage": "/Ingredients/ChickenBreasts.png"
-                }
-            ]
-        },
-        {
-            "Id": "10",
-            "Name": "Sticky Toffee Pudding",
-            "ImageUrl": "/Meals/StickyToffeePudding.png",
-            "latestMeals": true,
-            "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-            "ingredient": [
-                {
-                    "Id": "4",
-                    "Name": "Olive Oil",
-                    "IngredientImage": "/Ingredients/OliveOil.png"
-                },
-                {
-                    "Id": "5",
-                    "Name": "Strawberries",
-                    "IngredientImage": "/Ingredients/Strawberries.png"
-                },
-                {
-                    "Id": "6",
-                    "Name": "Butter",
-                    "IngredientImage": "/Ingredients/Butter.png"
-                },
-                {
-                    "Id": "2",
-                    "Name": "Egg",
-                    "IngredientImage": "/Ingredients/Egg.png"
-                }
-            ]
-        },
-        {
-            "Id": "11",
-            "Name": "Beef Brisket Pot Roast",
-            "latestMeals": true,
-            "ImageUrl": "/Meals/BeefBrisketPotRoast.png",
-            "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-            "ingredient": [
-                {
-                    "Id": "10",
-                    "Name": "Beef Brisket",
-                    "IngredientImage": "/Ingredients/BeefBrisket.png"
-                },
-                {
-                    "Id": "6",
-                    "Name": "Butter",
-                    "IngredientImage": "/Ingredients/Butter.png"
-                },
-                {
-                    "Id": "7",
-                    "Name": "Garlic",
-                    "IngredientImage": "/Ingredients/Garlic.png"
-                },
-                {
-                    "Id": "3",
-                    "Name": "Minced Beef",
-                    "IngredientImage": "/Ingredients/MincedBeef.png"
-                }
-            ]
-        },
-        {
-            "Id": "12",
-            "Name": "Burek",
-            "ImageUrl": "/Meals/Burek.png",
-            "latestMeals": false,
-            "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-            "ingredient": [
-                {
-                    "Id": "4",
-                    "Name": "Olive Oil",
-                    "IngredientImage": "/Ingredients/OliveOil.png"
-                },
-                {
-                    "Id": "2",
-                    "Name": "Egg",
-                    "IngredientImage": "/Ingredients/Egg.png"
-                },
-                {
-                    "Id": "6",
-                    "Name": "Butter",
-                    "IngredientImage": "/Ingredients/Butter.png"
-                },
-                {
-                    "Id": "3",
-                    "Name": "Minced Beef",
-                    "IngredientImage": "/Ingredients/MincedBeef.png"
-                }
-            ]
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
         }
-    ],
-    "Ingredients": [
+      ]
+    },
+    {
+      "id": "2",
+      "Name": "Fish Soup",
+      "ImageUrl": "/Meals/FishSoup.png",
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "latestMeals": true,
+      "ingredient": [
         {
-            "Id": "1",
-            "Name": "Rice",
-            "IngredientImage": "/Ingredients/Rice.png",
-            "popualarIngredients":true
+          "id": "2",
+          "Name": "Egg",
+          "IngredientImage": "/Ingredients/Egg.png"
         },
         {
-            "Id": "2",
-            "Name": "Egg",
-            "IngredientImage": "/Ingredients/Egg.png",
-            "popualarIngredients":false
+          "id": "3",
+          "Name": "Minced Beef",
+          "IngredientImage": "/Ingredients/MincedBeef.png"
         },
         {
-            "Id": "3",
-            "Name": "Minced Beef",
-            "IngredientImage": "/Ingredients/MincedBeef.png",
-            "popualarIngredients":true
+          "id": "4",
+          "Name": "Olive Oil",
+          "IngredientImage": "/Ingredients/OliveOil.png"
         },
         {
-            "Id": "4",
-            "Name": "Olive Oil",
-            "IngredientImage": "/Ingredients/OliveOil.png",
-            "popualarIngredients":false
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
         },
         {
-            "Id": "5",
-            "Name": "Strawberries",
-            "IngredientImage": "/Ingredients/Strawberries.png",
-            "popualarIngredients":true
-        },
-        {
-            "Id": "6",
-            "Name": "Butter",
-            "IngredientImage": "/Ingredients/Butter.png",
-            "popualarIngredients":false
-        },
-        {
-            "Id": "7",
-            "Name": "Garlic",
-            "IngredientImage": "/Ingredients/Garlic.png",
-            "popualarIngredients":false
-        },
-        {
-            "Id": "8",
-            "Name": "Potatoes",
-            "IngredientImage": "/Ingredients/Potatoes.png",
-            "popualarIngredients":false
-        },
-        {
-            "Id": "9",
-            "Name": "Chicken Breasts",
-            "IngredientImage": "/Ingredients/ChickenBreasts.png",
-            "popualarIngredients":true
-        },
-        {
-            "Id": "10",
-            "Name": "Beef Brisket",
-            "IngredientImage": "/Ingredients/BeefBrisket.png",
-            "popualarIngredients":true
+          "id": "8",
+          "Name": "Potatoes",
+          "IngredientImage": "/Ingredients/Potatoes.png"
         }
-    ]
+      ]
+    },
+    {
+      "id": "3",
+      "Name": "Lamb Pilaf",
+      "ImageUrl": "/Meals/LambPilaf.png",
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "latestMeals": true,
+      "ingredient": [
+        {
+          "id": "1",
+          "Name": "Rice",
+          "IngredientImage": "/Ingredients/Rice.png"
+        },
+        {
+          "id": "4",
+          "Name": "Olive Oil",
+          "IngredientImage": "/Ingredients/OliveOil.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        },
+        {
+          "id": "3",
+          "Name": "Minced Beef",
+          "IngredientImage": "/Ingredients/MincedBeef.png"
+        },
+        {
+          "id": "4",
+          "Name": "Olive Oil",
+          "IngredientImage": "/Ingredients/OliveOil.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        },
+        {
+          "id": "7",
+          "Name": "Garlic",
+          "IngredientImage": "/Ingredients/Garlic.png"
+        },
+        {
+          "id": "10",
+          "Name": "Beef Brisket",
+          "IngredientImage": "/Ingredients/BeefBrisket.png"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "Name": "Potato Salad",
+      "ImageUrl": "/Meals/PotatoSalad.png",
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "latestMeals": false,
+      "ingredient": [
+        {
+          "id": "4",
+          "Name": "Olive Oil",
+          "IngredientImage": "/Ingredients/OliveOil.png"
+        },
+        {
+          "id": "8",
+          "Name": "Potatoes",
+          "IngredientImage": "/Ingredients/Potatoes.png"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "Name": "Strawberries Roman off",
+      "ImageUrl": "/Meals/StrawberriesRomanoff.png",
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "latestMeals": true,
+      "ingredient": [
+        {
+          "id": "5",
+          "Name": "Strawberries",
+          "IngredientImage": "/Ingredients/Strawberries.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "Name": "Beetroot Soup",
+      "ImageUrl": "/Meals/BeetrootSoup.png",
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "latestMeals": false,
+      "ingredient": [
+        {
+          "id": "4",
+          "Name": "Olive Oil",
+          "IngredientImage": "/Ingredients/OliveOil.png"
+        },
+        {
+          "id": "5",
+          "Name": "Strawberries",
+          "IngredientImage": "/Ingredients/Strawberries.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "Name": "Cabbage Soup",
+      "ImageUrl": "/Meals/CabbageSoup.png",
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "latestMeals": false,
+      "ingredient": [
+        {
+          "id": "2",
+          "Name": "Egg",
+          "IngredientImage": "/Ingredients/Egg.png"
+        },
+        {
+          "id": "4",
+          "Name": "Olive Oil",
+          "IngredientImage": "/Ingredients/OliveOil.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        },
+        {
+          "id": "8",
+          "Name": "Potatoes",
+          "IngredientImage": "/Ingredients/Potatoes.png"
+        },
+        {
+          "id": "9",
+          "Name": "Chicken Breasts",
+          "IngredientImage": "/Ingredients/ChickenBreasts.png"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "Name": "Lamb Biryani",
+      "ImageUrl": "/Meals/LambBiryani.png",
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "latestMeals": true,
+      "ingredient": [
+        {
+          "id": "1",
+          "Name": "Rice",
+          "IngredientImage": "/Ingredients/Rice.png"
+        },
+        {
+          "id": "2",
+          "Name": "Egg",
+          "IngredientImage": "/Ingredients/Egg.png"
+        },
+        {
+          "id": "3",
+          "Name": "Minced Beef",
+          "IngredientImage": "/Ingredients/MincedBeef.png"
+        },
+        {
+          "id": "4",
+          "Name": "Olive Oil",
+          "IngredientImage": "/Ingredients/OliveOil.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        },
+        {
+          "id": "7",
+          "Name": "Garlic",
+          "IngredientImage": "/Ingredients/Garlic.png"
+        },
+        {
+          "id": "8",
+          "Name": "Potatoes",
+          "IngredientImage": "/Ingredients/Potatoes.png"
+        },
+        {
+          "id": "10",
+          "Name": "Beef Brisket",
+          "IngredientImage": "/Ingredients/BeefBrisket.png"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "Name": "15-minute chicken & halloumi burgers",
+      "ImageUrl": "/Meals/Burgers.png",
+      "latestMeals": true,
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "ingredient": [
+        {
+          "id": "1",
+          "Name": "Rice",
+          "IngredientImage": "/Ingredients/Rice.png"
+        },
+        {
+          "id": "2",
+          "Name": "Egg",
+          "IngredientImage": "/Ingredients/Egg.png"
+        },
+        {
+          "id": "3",
+          "Name": "Minced Beef",
+          "IngredientImage": "/Ingredients/MincedBeef.png"
+        },
+        {
+          "id": "4",
+          "Name": "Olive Oil",
+          "IngredientImage": "/Ingredients/OliveOil.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        },
+        {
+          "id": "8",
+          "Name": "Potatoes",
+          "IngredientImage": "/Ingredients/Potatoes.png"
+        },
+        {
+          "id": "9",
+          "Name": "Chicken Breasts",
+          "IngredientImage": "/Ingredients/ChickenBreasts.png"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "Name": "Sticky Toffee Pudding",
+      "ImageUrl": "/Meals/StickyToffeePudding.png",
+      "latestMeals": true,
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "ingredient": [
+        {
+          "id": "4",
+          "Name": "Olive Oil",
+          "IngredientImage": "/Ingredients/OliveOil.png"
+        },
+        {
+          "id": "5",
+          "Name": "Strawberries",
+          "IngredientImage": "/Ingredients/Strawberries.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        },
+        {
+          "id": "2",
+          "Name": "Egg",
+          "IngredientImage": "/Ingredients/Egg.png"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "Name": "Beef Brisket Pot Roast",
+      "latestMeals": true,
+      "ImageUrl": "/Meals/BeefBrisketPotRoast.png",
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "ingredient": [
+        {
+          "id": "10",
+          "Name": "Beef Brisket",
+          "IngredientImage": "/Ingredients/BeefBrisket.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        },
+        {
+          "id": "7",
+          "Name": "Garlic",
+          "IngredientImage": "/Ingredients/Garlic.png"
+        },
+        {
+          "id": "3",
+          "Name": "Minced Beef",
+          "IngredientImage": "/Ingredients/MincedBeef.png"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "Name": "Burek",
+      "ImageUrl": "/Meals/Burek.png",
+      "latestMeals": false,
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "ingredient": [
+        {
+          "id": "4",
+          "Name": "Olive Oil",
+          "IngredientImage": "/Ingredients/OliveOil.png"
+        },
+        {
+          "id": "2",
+          "Name": "Egg",
+          "IngredientImage": "/Ingredients/Egg.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        },
+        {
+          "id": "3",
+          "Name": "Minced Beef",
+          "IngredientImage": "/Ingredients/MincedBeef.png"
+        }
+      ]
+    },
+    {
+      "id": "e14c",
+      "Name": "Blini Pancakes",
+      "ImageUrl": "/Meals/BliniPancakes.png",
+      "country": "turk",
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "latestMeals": true,
+      "ingredient": [
+        {
+          "id": "2",
+          "Name": "Egg",
+          "IngredientImage": "/Ingredients/Egg.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        }
+      ]
+    },
+    {
+      "id": "9699",
+      "Name": "Berkay",
+      "ImageUrl": "/Meals/BliniPancakes.png",
+      "country": "turk",
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "latestMeals": true,
+      "ingredient": [
+        {
+          "id": "2",
+          "Name": "Egg",
+          "IngredientImage": "/Ingredients/Egg.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        }
+      ]
+    },
+    {
+      "id": "cd0d",
+      "Name": "Blini Pancakes",
+      "ImageUrl": "/Meals/BliniPancakes.png",
+      "country": "turk",
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "latestMeals": true,
+      "ingredient": [
+        {
+          "id": "2",
+          "Name": "Egg",
+          "IngredientImage": "/Ingredients/Egg.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        }
+      ]
+    },
+    {
+      "id": "8527",
+      "Name": "Berkay",
+      "ImageUrl": "/Meals/BliniPancakes.png",
+      "country": "turk",
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "latestMeals": true,
+      "ingredient": [
+        {
+          "id": "2",
+          "Name": "Egg",
+          "IngredientImage": "/Ingredients/Egg.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        }
+      ]
+    },
+    {
+      "id": "1808",
+      "Name": "Berkay",
+      "ImageUrl": "/Meals/BliniPancakes.png",
+      "country": "turk",
+      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "latestMeals": true,
+      "ingredient": [
+        {
+          "id": "2",
+          "Name": "Egg",
+          "IngredientImage": "/Ingredients/Egg.png"
+        },
+        {
+          "id": "6",
+          "Name": "Butter",
+          "IngredientImage": "/Ingredients/Butter.png"
+        }
+      ]
+    }
+  ],
+  "Ingredients": [
+    {
+      "id": "1",
+      "Name": "Rice",
+      "IngredientImage": "/Ingredients/Rice.png",
+      "popualarIngredients": true
+    },
+    {
+      "id": "2",
+      "Name": "Egg",
+      "IngredientImage": "/Ingredients/Egg.png",
+      "popualarIngredients": false
+    },
+    {
+      "id": "3",
+      "Name": "Minced Beef",
+      "IngredientImage": "/Ingredients/MincedBeef.png",
+      "popualarIngredients": true
+    },
+    {
+      "id": "4",
+      "Name": "Olive Oil",
+      "IngredientImage": "/Ingredients/OliveOil.png",
+      "popualarIngredients": false
+    },
+    {
+      "id": "5",
+      "Name": "Strawberries",
+      "IngredientImage": "/Ingredients/Strawberries.png",
+      "popualarIngredients": true
+    },
+    {
+      "id": "6",
+      "Name": "Butter",
+      "IngredientImage": "/Ingredients/Butter.png",
+      "popualarIngredients": false
+    },
+    {
+      "id": "7",
+      "Name": "Garlic",
+      "IngredientImage": "/Ingredients/Garlic.png",
+      "popualarIngredients": false
+    },
+    {
+      "id": "8",
+      "Name": "Potatoes",
+      "IngredientImage": "/Ingredients/Potatoes.png",
+      "popualarIngredients": false
+    },
+    {
+      "id": "9",
+      "Name": "Chicken Breasts",
+      "IngredientImage": "/Ingredients/ChickenBreasts.png",
+      "popualarIngredients": true
+    },
+    {
+      "id": "10",
+      "Name": "Beef Brisket",
+      "IngredientImage": "/Ingredients/BeefBrisket.png",
+      "popualarIngredients": true
+    },
+    {
+      "id": "8747",
+      "Name": "12312",
+      "IngredientImage": "qwe",
+      "popualarIngredients": true
+    },
+    {
+      "id": "511c",
+      "Name": "zsc",
+      "IngredientImage": "zdcv",
+      "popualarIngredients": true
+    },
+    {
+      "id": "1f55",
+      "Name": "berkay",
+      "IngredientImage": "berkay.png",
+      "popualarIngredients": true
+    },
+    {
+      "id": "8fc4",
+      "Name": "www",
+      "IngredientImage": "www.jpg",
+      "popualarIngredients": true
+    }
+  ]
 }
