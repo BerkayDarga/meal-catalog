@@ -115,9 +115,16 @@ function home() {
         navigate(`/urunEkleme`)
     }
 
+
+    // if(tıklanma == exist) {
+
+    // }
     return (
         <div className="">
             <Feature />
+            <div className="title">
+                <h4>Latest Meals</h4>
+            </div>
             <div className="mealContainer">
                 {latestMeals.map(meal => (
                     <Sidebar image={meal.ImageUrl} name={meal.Name} buttonclick={() => mealButtonClick(meal.id)} />
@@ -151,5 +158,10 @@ function home() {
             <Footer />
         </div>
     );
+    // else() {
+    return (
+        <Feature />
+    );
+    // }
 }
 export default home;

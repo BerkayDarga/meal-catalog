@@ -90,10 +90,11 @@
 
 }
 
-.input {
+.inputx {
   height: 34px;
   border-radius: 4px;
   padding-left: 10px;
+  width: 80px;
 }
 
 .content {
@@ -323,11 +324,14 @@
 .mealDetail {
   background-color: #2d2013;
   color: #fff;
-  display: flex;
-  gap: 30px;
   padding: 0 10%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+
+  align-items: flex-start;
+  /* Sol tarafa hizalama */
+  gap: 20px;
 }
 
 .mealDetail img {
@@ -335,16 +339,44 @@
   height: 400px;
 }
 
-.mealWrapper {
+.mealUp {
   display: flex;
 }
 
+.mealWrapper {
+  display: flex;
+  gap: 20px;
+}
+
 .aa {
-  margin: 20px 0px;
+  display: flex;
+}
+.bb {
+  position: absolute;
+  left: 560px;
 }
 
 .mealDetailRight {
   margin-left: 20px;
+}
+
+.malzemeler {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  margin-top: 30px;
+}
+
+.malzemeler img {
+  width: 200px;
+  height: 200px;
+}
+
+.mealIngredient {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .instructions {
@@ -355,6 +387,118 @@
   gap: 20px;
 }
 
-.instructions p{
+.instructions p {
   padding-bottom: 40px;
+}
+
+
+
+
+
+/* Konteyner */
+.containerEklemeSayfası {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 2rem;
+  flex-wrap: wrap;
+  /* Küçük ekranlar için uyumlu hale getirilmiş */
+}
+
+/* Ürün Ekleme ve Yemek Ekleme kutuları */
+.urunEkleme,
+.yemekEkleme {
+  flex: 1;
+  min-width: 45%;
+  /* Her biri en az %45 genişlikte */
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlık */
+.urunEkleme h1,
+.yemekEkleme h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Form grupları */
+.urunEkleme .form-groupUrun,
+.yemekEkleme .form-groupYemek {
+  margin-bottom: 1rem;
+}
+
+/* Label stili */
+.urunEkleme label,
+.yemekEkleme label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #555;
+}
+
+/* Input ve Textarea stil */
+.urunEkleme input,
+.yemekEkleme input,
+.urunEkleme textarea,
+.yemekEkleme textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+/* Input ve Textarea odaklanma (focus) durumu */
+/* .urunEkleme input:focus, .yemekEkleme input:focus, .urunEkleme textarea:focus, .yemekEkleme textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+} */
+
+/* Textarea özelleştirmesi */
+.urunEkleme textarea,
+.yemekEkleme textarea {
+  min-height: 120px;
+}
+
+/* Butonlar */
+.urunEkleme button,
+.yemekEkleme button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.urunEkleme button[type="button"],
+.yemekEkleme button[type="button"] {
+  background-color: #28a745;
+  margin-top: 1rem;
+  width: auto;
+}
+
+/* Durum mesajları */
+.urunEkleme p,
+.yemekEkleme p {
+  font-size: 1rem;
+  color: #d9534f;
+  /* Kırmızı hata mesajları */
+  margin-top: 1rem;
+}
+
+/* Başarı mesajı */
+.urunEkleme p.success,
+.yemekEkleme p.success {
+  color: #28a745;
 }

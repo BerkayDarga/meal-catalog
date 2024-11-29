@@ -27,20 +27,23 @@ function mealPage() {
         <div className="">
             {meals.map(mealss => (
                 <div className="mealDetail" key={mealss.id}>
-                    <div className="mealWrapper">
-                        <div className="mealDetailLeft">
-                            <h1 className="aa">{mealss.Name}</h1>
-                            <img src={mealss.ImageUrl} alt={mealss.Name} />
-                        </div>
-                    </div>
-                    <div className="">
-                        {mealss.ingredient.map(aa => (
-                            <div>
-                                <h1>{aa.Name}</h1>
-                                <img src={aa.IngredientImage} alt="" />
+                    <div className="mealUp">
+                        <div className="mealWrapper">
+                            <div className="mealDetailLeft">
+                                <h1 className="aa">{mealss.Name}</h1>
+                                <img src={mealss.ImageUrl} alt={mealss.Name} />
                             </div>
+                        </div>
+                        <h1 className="bb ">Ingredients</h1>
+                        <div className="mealIngredient">
+                            {mealss.ingredient.map(aa => (
+                                <div className="malzemeler">
+                                    <img src={aa.IngredientImage} alt="" />
+                                    <h3>{aa.Name}</h3>
+                                </div>
 
-                        ))}
+                            ))}
+                        </div>
                     </div>
                     <div className="instructions">
                         <h1>Instructions</h1>

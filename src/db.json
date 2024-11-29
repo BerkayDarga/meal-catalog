@@ -72,19 +72,9 @@
           "IngredientImage": "/Ingredients/OliveOil.png"
         },
         {
-          "id": "6",
-          "Name": "Butter",
-          "IngredientImage": "/Ingredients/Butter.png"
-        },
-        {
           "id": "3",
           "Name": "Minced Beef",
           "IngredientImage": "/Ingredients/MincedBeef.png"
-        },
-        {
-          "id": "4",
-          "Name": "Olive Oil",
-          "IngredientImage": "/Ingredients/OliveOil.png"
         },
         {
           "id": "6",
@@ -440,42 +430,87 @@
       ]
     },
     {
-      "id": "8527",
-      "Name": "Berkay",
-      "ImageUrl": "/Meals/BliniPancakes.png",
-      "country": "turk",
-      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "id": "1732792558177",
+      "Name": "ramo",
+      "ImageUrl": "armo.png",
+      "country": "turkey",
+      "Instructions": "ramo ramoco",
       "latestMeals": true,
       "ingredient": [
         {
-          "id": "2",
-          "Name": "Egg",
-          "IngredientImage": "/Ingredients/Egg.png"
-        },
-        {
-          "id": "6",
-          "Name": "Butter",
-          "IngredientImage": "/Ingredients/Butter.png"
+          "id": "1732792546525",
+          "name": "yemek",
+          "ingredientImage": "yemek"
         }
       ]
     },
     {
-      "id": "1808",
-      "Name": "Berkay",
-      "ImageUrl": "/Meals/BliniPancakes.png",
-      "country": "turk",
-      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
+      "id": "1732792636196",
+      "Name": "sc",
+      "ImageUrl": "secd.png",
+      "country": "qeceq",
+      "Instructions": "qedfqe",
       "latestMeals": true,
       "ingredient": [
         {
-          "id": "2",
-          "Name": "Egg",
-          "IngredientImage": "/Ingredients/Egg.png"
+          "id": "",
+          "name": "qef",
+          "ingredientImage": "qef.png"
+        }
+      ]
+    },
+    {
+      "id": "1732792655635",
+      "Name": "qed",
+      "ImageUrl": "qed.png",
+      "country": "qed",
+      "Instructions": "qedeqd",
+      "latestMeals": true,
+      "ingredient": [
+        {
+          "id": "",
+          "name": "qed",
+          "ingredientImage": "qe.png"
+        }
+      ]
+    },
+    {
+      "id": "1732792962415",
+      "Name": "asda",
+      "ImageUrl": "asdasd",
+      "country": "asd",
+      "Instructions": "asd",
+      "latestMeals": true,
+      "ingredient": [
+        {
+          "id": "1732792949117",
+          "name": "asd",
+          "ingredientImage": "asd"
+        }
+      ]
+    },
+    {
+      "id": "1732792996060",
+      "Name": "erv",
+      "ImageUrl": "evrf",
+      "country": "erv",
+      "Instructions": "ewrv",
+      "latestMeals": false,
+      "ingredient": [
+        {
+          "id": "",
+          "name": "erv",
+          "ingredientImage": "erv"
         },
         {
-          "id": "6",
-          "Name": "Butter",
-          "IngredientImage": "/Ingredients/Butter.png"
+          "id": "1732792977076",
+          "name": "erv",
+          "ingredientImage": "erv"
+        },
+        {
+          "id": "1732792979911",
+          "name": "erv",
+          "ingredientImage": "erv"
         }
       ]
     }
@@ -542,28 +577,40 @@
       "popualarIngredients": true
     },
     {
-      "id": "8747",
-      "Name": "12312",
-      "IngredientImage": "qwe",
-      "popualarIngredients": true
-    },
-    {
-      "id": "511c",
-      "Name": "zsc",
-      "IngredientImage": "zdcv",
-      "popualarIngredients": true
-    },
-    {
       "id": "1f55",
       "Name": "berkay",
       "IngredientImage": "berkay.png",
       "popualarIngredients": true
     },
     {
-      "id": "8fc4",
-      "Name": "www",
-      "IngredientImage": "www.jpg",
-      "popualarIngredients": true
+      "id": "6256",
+      "Name": "vv",
+      "IngredientImage": "vv.jpg",
+      "popularIngredients": true
+    },
+    {
+      "id": "4608",
+      "Name": "asdas",
+      "IngredientImage": "asdasd",
+      "popularIngredients": true
+    },
+    {
+      "id": "9721",
+      "Name": "asdas",
+      "IngredientImage": "asdasd",
+      "popularIngredients": true
+    },
+    {
+      "id": "5c47",
+      "Name": "asdas",
+      "IngredientImage": "asdasd",
+      "popularIngredients": true
+    },
+    {
+      "id": "f4ec",
+      "Name": "asdas",
+      "IngredientImage": "asdasd",
+      "popularIngredients": true
     }
   ]
 }
