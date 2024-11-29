@@ -396,6 +396,7 @@
       "country": "turk",
       "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
       "latestMeals": true,
+
       "ingredient": [
         {
           "id": "2",
@@ -488,31 +489,6 @@
           "ingredientImage": "asd"
         }
       ]
-    },
-    {
-      "id": "1732792996060",
-      "Name": "erv",
-      "ImageUrl": "evrf",
-      "country": "erv",
-      "Instructions": "ewrv",
-      "latestMeals": false,
-      "ingredient": [
-        {
-          "id": "",
-          "name": "erv",
-          "ingredientImage": "erv"
-        },
-        {
-          "id": "1732792977076",
-          "name": "erv",
-          "ingredientImage": "erv"
-        },
-        {
-          "id": "1732792979911",
-          "name": "erv",
-          "ingredientImage": "erv"
-        }
-      ]
     }
   ],
   "Ingredients": [
@@ -575,42 +551,6 @@
       "Name": "Beef Brisket",
       "IngredientImage": "/Ingredients/BeefBrisket.png",
       "popualarIngredients": true
-    },
-    {
-      "id": "1f55",
-      "Name": "berkay",
-      "IngredientImage": "berkay.png",
-      "popualarIngredients": true
-    },
-    {
-      "id": "6256",
-      "Name": "vv",
-      "IngredientImage": "vv.jpg",
-      "popularIngredients": true
-    },
-    {
-      "id": "4608",
-      "Name": "asdas",
-      "IngredientImage": "asdasd",
-      "popularIngredients": true
-    },
-    {
-      "id": "9721",
-      "Name": "asdas",
-      "IngredientImage": "asdasd",
-      "popularIngredients": true
-    },
-    {
-      "id": "5c47",
-      "Name": "asdas",
-      "IngredientImage": "asdasd",
-      "popularIngredients": true
-    },
-    {
-      "id": "f4ec",
-      "Name": "asdas",
-      "IngredientImage": "asdasd",
-      "popularIngredients": true
     }
   ]
 }

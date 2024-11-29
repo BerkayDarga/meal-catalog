@@ -26,7 +26,7 @@
 
 .center {
   width: 1140px;
-  height: 334px;
+  height: 200px;
   color: #fff;
   display: flex;
 }
@@ -140,7 +140,9 @@
 }
 
 .counters {
-  margin: 20px 0;
+  background-color: #2d2013;
+  color: #fff;
+  font-size: 25px;
 }
 
 .counters span {
@@ -486,6 +488,19 @@
   background-color: #28a745;
   margin-top: 1rem;
   width: auto;
+}
+
+.search {
+  background-color: #2d2013;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search input {
+  margin: 0;
+  padding: 0;
+  height: 33.8px;
 }
 
 /* Durum mesajları */

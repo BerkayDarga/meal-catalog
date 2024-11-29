@@ -19,20 +19,38 @@ function home() {
     const [popularIngredients, setPopularIngredients] = useState([]);
     const [randomMeals, setRandomMeals] = useState([]);
     const [randomIngredients, setRandomIngredients] = useState([]);
-
+    const [ingredients, setIngredients] = useState([]);
     const [meals, setMeals] = useState([]);
-    const { idMeal } = useParams();
-    const navigation = useNavigate();
-    const productDetailPage = (tt) => {
-        navigation(`/mealDetail/${tt}`)
-    }
+    const [filteredMeals, setFilteredMeals] = useState([]);  // Arama sonucu filtrelenmiş yemekler
+    const [searchQuery, setSearchQuery] = useState("");  // Kullanıcının girdiği arama terimi
 
-    useEffect(() => {
-        fetch(`http://localhost:4000/meals?id=${idMeal}`)
-            .then(aa => aa.json())
-            .then(mealData => setMeals(mealData))
-            .catch(error => console.error(error))
-    }, []);
+
+    // Kullanıcının arama terimini güncelleyen fonksiyon
+    const handleSearchInputChange = (event) => {
+        setSearchQuery(event.target.value);
+        setFilteredMeals('');   //değer yazarken filtrelenmiş data yı
+    };
+
+    const handleSearch = () => {
+        // Eğer arama terimi boşsa, tüm yemekleri göster
+        if (!searchQuery) {
+            setFilteredMeals('');
+            return;
+        }
+
+        // Arama terimi ile eşleşen yemekleri filtrele
+        const filtered = meals.filter((meal) => {
+            const mealName = meal.Name.toLowerCase(); // Sadece yemek ismine odaklan
+            const query = searchQuery.toLowerCase();
+
+            // Sadece yemek ismi ile arama yapıyoruz
+            return mealName.includes(query);
+        });
+
+        // Filtrelenmiş yemekleri state'e aktar
+        setFilteredMeals(filtered);
+    };
+
 
     useEffect(() => {   //useEffect bileşen ilk render edildiğinde bir kez çalışır
         fetch("http://localhost:4000/meals?latestMeals=true")
@@ -55,6 +73,7 @@ function home() {
         fetch("http://localhost:4000/meals")
             .then(response => response.json())
             .then(veri => {
+                setMeals(veri)
                 setRandomMeals(veri)
                 const allMeals = veri;
                 const selectedMeals = [];
@@ -83,6 +102,7 @@ function home() {
         fetch("http://localhost:4000/Ingredients")
             .then(response => response.json())
             .then(veri => {
+                setIngredients(veri)
                 setRandomIngredients(veri)
                 const allMeals = veri;
                 const selectedIngredients = [];
@@ -115,53 +135,99 @@ function home() {
         navigate(`/urunEkleme`)
     }
 
-
-    // if(tıklanma == exist) {
+    //input un içi boşsa
+    // if(tıklanma == not exist) {
 
     // }
     return (
         <div className="">
             <Feature />
             <div className="title">
-                <h4>Latest Meals</h4>
-            </div>
-            <div className="mealContainer">
-                {latestMeals.map(meal => (
-                    <Sidebar image={meal.ImageUrl} name={meal.Name} buttonclick={() => mealButtonClick(meal.id)} />
-                ))}
-            </div>
-            <div className="">
-                <PopularIngredientsTitle />
-            </div>
-            <div className="popularIngredient mealContainer">
-                {popularIngredients.map(populars => (
-                    <PopularIngredients img={populars.IngredientImage} ingredientName={populars.Name} />
-                ))}
-            </div>
-            <div className='RandomMealsTitle'>
-                <RandomMealsTitle />
-            </div>
-            <div className="randomMeals">
-                {randomMeals.map(randomMeals => (
-                    <RandomMeals image={randomMeals.ImageUrl} name={randomMeals.Name} />
-                ))}
-            </div>
-            <div className="RandomMealsTitle">
-                <RandomIngredientsTitle />
-            </div>
+                {/* s */}
+                <div className='search'>
+                    <input
+                        className="inputContainer"
+                        type="text"
+                        value={searchQuery}
+                        onChange={handleSearchInputChange}
+                        placeholder="Search meals"
+                    />
+                    <button className="search-button" onClick={handleSearch}>Search</button>
+                </div>
 
-            <div className="popularIngredient mealContainer">
-                {randomIngredients.map(randoms => (
-                    <RandomIngredients image={randoms.IngredientImage} name={randoms.Name} />
-                ))}
+                {/* Ekranda filtrelenmiş yemekleri listele */}
+
+
+                <div className="counters">
+                    <span>Total Meals: {meals.length}</span>
+                </div>
+                {
+                    searchQuery != "" ? (
+                        <div className="meal-list">
+                            {filteredMeals.length > 0 ? (
+                                filteredMeals.map((meal) => (
+                                    <div key={meal.id} className="meal-card">
+                                        <img src={meal.ImageUrl} alt={meal.Name} />
+                                        <h3>{meal.Name}</h3>
+                                        <p>{meal.Instructions}</p>
+                                        {/* Ingredients listesine gerek yok */}
+                                    </div>
+                                ))
+                            ) : (
+                                <p>No meals found</p>
+                            )}
+                        </div>)
+
+                        :
+
+
+                        (
+                            <div>
+                                <h4>Latest Meals</h4>
+
+                                <div className="mealContainer">
+                                    {latestMeals.map(meal => (
+                                        <Sidebar image={meal.ImageUrl} name={meal.Name} buttonclick={() => mealButtonClick(meal.id)} />
+                                    ))}
+                                </div>
+
+
+                                <div className="">
+                                    <PopularIngredientsTitle />
+                                </div>
+                                <div className="popularIngredient mealContainer">
+                                    {popularIngredients.map(populars => (
+                                        <PopularIngredients img={populars.IngredientImage} ingredientName={populars.Name} />
+                                    ))}
+                                </div>
+                                <div className='RandomMealsTitle'>
+                                    <RandomMealsTitle />
+                                </div>
+                                <div className="randomMeals">
+                                    {randomMeals.map(randomMeals => (
+                                        <RandomMeals image={randomMeals.ImageUrl} name={randomMeals.Name} />
+                                    ))}
+                                </div>
+                                <div className="RandomMealsTitle">
+                                    <RandomIngredientsTitle />
+                                </div>
+
+                                <div className="popularIngredient mealContainer">
+                                    {randomIngredients.map(randoms => (
+                                        <RandomIngredients image={randoms.IngredientImage} name={randoms.Name} />
+                                    ))}
+                                </div>
+                            </div>
+                        )
+
+                }
+
+                {/* k */}
+
+
+                <Footer />
             </div>
-            <Footer />
         </div>
     );
-    // else() {
-    return (
-        <Feature />
-    );
-    // }
 }
 export default home;
