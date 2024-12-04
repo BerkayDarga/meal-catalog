@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function UrunEkleme() {
     // Ürün için
@@ -6,6 +6,7 @@ function UrunEkleme() {
     const [IngredientName, setIngredientName] = useState('');
     const [IngredientImage, setMealIngredientImage] = useState('');
     const [popularIngredients, setPopularIngredients] = useState(false);
+    const [secilecekIngredient, setSecilecekIngredient] = useState([]);
 
     // Yemek için
     const [mealName, setMealName] = useState('');
@@ -25,6 +26,15 @@ function UrunEkleme() {
     const handleMealImageChange = (e) => setMealImageUrl(e.target.value);
     const handleMealCountryChange = (e) => setMealCountry(e.target.value);
     const handleMealInstructionChange = (e) => setMealInstructions(e.target.value);
+
+
+
+    useEffect(() => {
+        fetch("http://localhost:4000/Ingredients")
+            .then(response => response.json())
+            .then(data => setSecilecekIngredient(data))
+            .catch(error => console.log(error))
+    })
 
     const addIngredient = () => {
         setMealIngredient([...mealingredient, { id: Date.now().toString(), name: '', ingredientImage: '' }]);
@@ -81,7 +91,7 @@ function UrunEkleme() {
                 body: JSON.stringify(newMeal),
             });
 
-            if (responseMeal.ok) {
+            if (responseMeal.ok) {   //post işlemi doğruysa başarılı yaz ve kullanıcının inputlara girdiği değerleri sıfırla
                 setStatus('Meal successfully added!');
                 setMealName('');
                 setMealImageUrl('');
@@ -95,7 +105,48 @@ function UrunEkleme() {
         } catch (error) {
             setStatus('Error: ' + error.message);
         }
+
+
+
+
+
+
+
+
+
+
+        function UrunEkleme() {
+            const [selectedIngredient, setSelectedIngredient] = useState({
+                Name: '',
+                ImageUrl: ''
+            });
+
+            // Bu fonksiyon butona tıklandığında seçilen veriyi inputlara aktaracak
+            const handleIngredientClick = (ingredient) => {
+                setSelectedIngredient({
+                    Name: ingredient.Name,
+                    ImageUrl: ingredient.IngredientImage
+                });
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     };
+
+
 
     return (
         <div className="containerEklemeSayfası">
@@ -117,12 +168,14 @@ function UrunEkleme() {
                     </div>
                     <button className="buttonUrun" type="submit">Add Ingredient</button>
                 </form>
+                {status && <p className={status === 'Kaydetme başarılı' ? 'success' : ''}>{status}</p>}
+
             </div>
-  {/* {status && <p className={status === 'Kaydetme başarılı' ? 'success' : ''}>{status}</p>} */}
 
             {/*Yemek Ekleme */}
             <div className="yemekEkleme">
                 <h1>Add a New Meal</h1>
+                {/* xxx */}
                 <form onSubmit={postMeal}>
                     <div className="form-groupYemek">
                         <label>Name:</label>
@@ -160,7 +213,18 @@ function UrunEkleme() {
                                 />
                             </div>
                         ))}
-                        <button type="button" onClick={addIngredient}>Add Ingredient</button>
+                        {/* <button type="button" onClick={addIngredient}>Add Ingredient</button> */}
+                        <div className="containerEklenenUrun">
+                            {secilecekIngredient.map(eklenenIngredient => (
+                                <button type='button' className='urunEklemeButon' onClick={() => {
+                                    addIngredient();
+                                    // handleIngredientClick(eklenenIngredient);
+                                }}>
+                                    <h1>{eklenenIngredient.Name}</h1>
+                                    <img src={eklenenIngredient.IngredientImage} alt="" />
+                                </button>
+                            ))}
+                        </div>
                     </div>
                     <div className="form-groupYemek">
                         <button type="button" onClick={toggleLatestMeals}>
@@ -169,7 +233,8 @@ function UrunEkleme() {
                     </div>
                     <button type="submit">Add Meal</button>
                 </form>
-                {/* {status && <p className={status === 'Meal successfully added!' ? 'success' : ''}>{status}</p>} */}
+                {/* xxx */}
+                {status && <p className={status === 'Meal successfully added!' ? 'success' : ''}>{status}</p>}
             </div>
         </div>
 
@@ -177,3 +242,5 @@ function UrunEkleme() {
 }
 
 export default UrunEkleme;
+
+

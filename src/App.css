@@ -14,6 +14,43 @@
   justify-content: space-between;
 }
 
+.containerEklenenUrun {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.urunEklemeButon {
+  width: 100px;
+  height: 200px;
+}
+
+.urunEklemeButon img{
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.eklenenUrun {
+  display: flex;
+}
+
+.eklenenUrun img {
+  width: 100px;
+  height: 100px;
+}
+
 .feature {
   background-color: #2d2013;
   display: flex;
@@ -353,6 +390,7 @@
 .aa {
   display: flex;
 }
+
 .bb {
   position: absolute;
   left: 560px;

@@ -240,7 +240,7 @@
     },
     {
       "id": "9",
-      "Name": "15-minute chicken & halloumi burgers",
+      "Name": "halloumi burgers",
       "ImageUrl": "/Meals/Burgers.png",
       "latestMeals": true,
       "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
@@ -368,127 +368,6 @@
           "IngredientImage": "/Ingredients/MincedBeef.png"
         }
       ]
-    },
-    {
-      "id": "e14c",
-      "Name": "Blini Pancakes",
-      "ImageUrl": "/Meals/BliniPancakes.png",
-      "country": "turk",
-      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-      "latestMeals": true,
-      "ingredient": [
-        {
-          "id": "2",
-          "Name": "Egg",
-          "IngredientImage": "/Ingredients/Egg.png"
-        },
-        {
-          "id": "6",
-          "Name": "Butter",
-          "IngredientImage": "/Ingredients/Butter.png"
-        }
-      ]
-    },
-    {
-      "id": "9699",
-      "Name": "Berkay",
-      "ImageUrl": "/Meals/BliniPancakes.png",
-      "country": "turk",
-      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-      "latestMeals": true,
-
-      "ingredient": [
-        {
-          "id": "2",
-          "Name": "Egg",
-          "IngredientImage": "/Ingredients/Egg.png"
-        },
-        {
-          "id": "6",
-          "Name": "Butter",
-          "IngredientImage": "/Ingredients/Butter.png"
-        }
-      ]
-    },
-    {
-      "id": "cd0d",
-      "Name": "Blini Pancakes",
-      "ImageUrl": "/Meals/BliniPancakes.png",
-      "country": "turk",
-      "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
-      "latestMeals": true,
-      "ingredient": [
-        {
-          "id": "2",
-          "Name": "Egg",
-          "IngredientImage": "/Ingredients/Egg.png"
-        },
-        {
-          "id": "6",
-          "Name": "Butter",
-          "IngredientImage": "/Ingredients/Butter.png"
-        }
-      ]
-    },
-    {
-      "id": "1732792558177",
-      "Name": "ramo",
-      "ImageUrl": "armo.png",
-      "country": "turkey",
-      "Instructions": "ramo ramoco",
-      "latestMeals": true,
-      "ingredient": [
-        {
-          "id": "1732792546525",
-          "name": "yemek",
-          "ingredientImage": "yemek"
-        }
-      ]
-    },
-    {
-      "id": "1732792636196",
-      "Name": "sc",
-      "ImageUrl": "secd.png",
-      "country": "qeceq",
-      "Instructions": "qedfqe",
-      "latestMeals": true,
-      "ingredient": [
-        {
-          "id": "",
-          "name": "qef",
-          "ingredientImage": "qef.png"
-        }
-      ]
-    },
-    {
-      "id": "1732792655635",
-      "Name": "qed",
-      "ImageUrl": "qed.png",
-      "country": "qed",
-      "Instructions": "qedeqd",
-      "latestMeals": true,
-      "ingredient": [
-        {
-          "id": "",
-          "name": "qed",
-          "ingredientImage": "qe.png"
-        }
-      ]
-    },
-    {
-      "id": "1732792962415",
-      "Name": "asda",
-      "ImageUrl": "asdasd",
-      "country": "asd",
-      "Instructions": "asd",
-      "latestMeals": true,
-      "ingredient": [
-        {
-          "id": "1732792949117",
-          "name": "asd",
-          "ingredientImage": "asd"
-        }
-      ]
     }
   ],
   "Ingredients": [
@@ -496,7 +375,7 @@
       "id": "1",
       "Name": "Rice",
       "IngredientImage": "/Ingredients/Rice.png",
-      "popualarIngredients": true
+      "popualarIngredients": false
     },
     {
       "id": "2",

@@ -26,10 +26,15 @@ function home() {
 
 
     // Kullanıcının arama terimini güncelleyen fonksiyon
-    const handleSearchInputChange = (event) => {
-        setSearchQuery(event.target.value);
-        setFilteredMeals('');   //değer yazarken filtrelenmiş data yı
+    const handleSearchInputChange = (a) => {
+        setSearchQuery(a.target.value);   //kullanıcının girdiği değer
+        setFilteredMeals('');   //Eski filtrelenmiş öğeler sıfırlanır (boş bir değer atanır).
     };
+    //clear butonu
+    const handleClear = () => {
+        setSearchQuery('')   //kullanıcının girdiği değeri sıfırla
+        setFilteredMeals('')  //filtrelenmiş ögeleri sıfırla
+    }
 
     const handleSearch = () => {
         // Eğer arama terimi boşsa, tüm yemekleri göster
@@ -153,6 +158,7 @@ function home() {
                         placeholder="Search meals"
                     />
                     <button className="search-button" onClick={handleSearch}>Search</button>
+                    <button className="search-button" onClick={handleClear}>Clear</button>
                 </div>
 
                 {/* Ekranda filtrelenmiş yemekleri listele */}
@@ -173,12 +179,49 @@ function home() {
                                         {/* Ingredients listesine gerek yok */}
                                     </div>
                                 ))
-                            ) : (
-                                <p>No meals found</p>
+                            ) : (   //filteredMeals boş ise
+                                (
+                                    <div>
+                                        <h4>Latest Meals</h4>
+
+                                        <div className="mealContainer">
+                                            {latestMeals.map(meal => (
+                                                <Sidebar image={meal.ImageUrl} name={meal.Name} buttonclick={() => mealButtonClick(meal.id)} />
+                                            ))}
+                                        </div>
+
+
+                                        <div className="">
+                                            <PopularIngredientsTitle />
+                                        </div>
+                                        <div className="popularIngredient mealContainer">
+                                            {popularIngredients.map(populars => (
+                                                <PopularIngredients img={populars.IngredientImage} ingredientName={populars.Name} />
+                                            ))}
+                                        </div>
+                                        <div className='RandomMealsTitle'>
+                                            <RandomMealsTitle />
+                                        </div>
+                                        <div className="randomMeals">
+                                            {randomMeals.map(randomMeals => (
+                                                <RandomMeals image={randomMeals.ImageUrl} name={randomMeals.Name} />
+                                            ))}
+                                        </div>
+                                        <div className="RandomMealsTitle">
+                                            <RandomIngredientsTitle />
+                                        </div>
+
+                                        <div className="popularIngredient mealContainer">
+                                            {randomIngredients.map(randoms => (
+                                                <RandomIngredients image={randoms.IngredientImage} name={randoms.Name} />
+                                            ))}
+                                        </div>
+                                    </div>
+                                )
                             )}
                         </div>)
 
-                        :
+                        :   //searchQuery boş ise
 
 
                         (
