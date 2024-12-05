@@ -17,6 +17,7 @@
 .containerEklenenUrun {
   display: flex;
   flex-wrap: wrap;
+  background-color: #d9534f;
 }
 
 .urunEklemeButon {
@@ -28,19 +29,6 @@
   width: 100px;
   height: 100px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .eklenenUrun {
   display: flex;
@@ -511,7 +499,6 @@
 /* Butonlar */
 .urunEkleme button,
 .yemekEkleme button {
-  background-color: #007BFF;
   color: #fff;
   padding: 0.8rem 1.5rem;
   border: none;
@@ -523,7 +510,6 @@
 
 .urunEkleme button[type="button"],
 .yemekEkleme button[type="button"] {
-  background-color: #28a745;
   margin-top: 1rem;
   width: auto;
 }

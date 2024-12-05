@@ -136,8 +136,8 @@ function home() {
         navigate(`/mealDetail/${idclickmeal}`);
     }
 
-    const urunEklemeClick = () => {
-        navigate(`/urunEkleme`)
+    const urunDetay = (secilenUrunId) => {
+        navigate(`/ingredientDetail/${secilenUrunId}`)
     }
 
     //input un içi boşsa
@@ -168,7 +168,7 @@ function home() {
                     <span>Total Meals: {meals.length}</span>
                 </div>
                 {
-                    searchQuery != "" ? (
+                    (
                         <div className="meal-list">
                             {filteredMeals.length > 0 ? (
                                 filteredMeals.map((meal) => (
@@ -196,7 +196,7 @@ function home() {
                                         </div>
                                         <div className="popularIngredient mealContainer">
                                             {popularIngredients.map(populars => (
-                                                <PopularIngredients img={populars.IngredientImage} ingredientName={populars.Name} />
+                                                <PopularIngredients img={populars.IngredientImage} ingredientName={populars.Name} butonClick={() => urunDetay(populars.id)} />
                                             ))}
                                         </div>
                                         <div className='RandomMealsTitle'>
@@ -221,47 +221,6 @@ function home() {
                             )}
                         </div>)
 
-                        :   //searchQuery boş ise
-
-
-                        (
-                            <div>
-                                <h4>Latest Meals</h4>
-
-                                <div className="mealContainer">
-                                    {latestMeals.map(meal => (
-                                        <Sidebar image={meal.ImageUrl} name={meal.Name} buttonclick={() => mealButtonClick(meal.id)} />
-                                    ))}
-                                </div>
-
-
-                                <div className="">
-                                    <PopularIngredientsTitle />
-                                </div>
-                                <div className="popularIngredient mealContainer">
-                                    {popularIngredients.map(populars => (
-                                        <PopularIngredients img={populars.IngredientImage} ingredientName={populars.Name} />
-                                    ))}
-                                </div>
-                                <div className='RandomMealsTitle'>
-                                    <RandomMealsTitle />
-                                </div>
-                                <div className="randomMeals">
-                                    {randomMeals.map(randomMeals => (
-                                        <RandomMeals image={randomMeals.ImageUrl} name={randomMeals.Name} />
-                                    ))}
-                                </div>
-                                <div className="RandomMealsTitle">
-                                    <RandomIngredientsTitle />
-                                </div>
-
-                                <div className="popularIngredient mealContainer">
-                                    {randomIngredients.map(randoms => (
-                                        <RandomIngredients image={randoms.IngredientImage} name={randoms.Name} />
-                                    ))}
-                                </div>
-                            </div>
-                        )
 
                 }
 
@@ -273,4 +232,4 @@ function home() {
         </div>
     );
 }
-export default home;
+export default home;                                

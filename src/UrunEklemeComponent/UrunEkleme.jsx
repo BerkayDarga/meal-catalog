@@ -27,8 +27,6 @@ function UrunEkleme() {
     const handleMealCountryChange = (e) => setMealCountry(e.target.value);
     const handleMealInstructionChange = (e) => setMealInstructions(e.target.value);
 
-
-
     useEffect(() => {
         fetch("http://localhost:4000/Ingredients")
             .then(response => response.json())
@@ -36,8 +34,8 @@ function UrunEkleme() {
             .catch(error => console.log(error))
     })
 
-    const addIngredient = () => {
-        setMealIngredient([...mealingredient, { id: Date.now().toString(), name: '', ingredientImage: '' }]);
+    const addIngredient = (a, b, c) => {
+        setMealIngredient([...mealingredient, { id: a, Name: b, IngredientImage: c }]);
     };
 
     const handleIngredientChange = (index, field, value) => {
@@ -97,7 +95,7 @@ function UrunEkleme() {
                 setMealImageUrl('');
                 setMealCountry('');
                 setMealInstructions('');
-                setMealIngredient([{ id: '', name: '', ingredientImage: '' }]);
+                setMealIngredient([]);
                 setMealLatestMeals(false);
             } else {
                 setStatus('Failed to add meal');
@@ -105,15 +103,6 @@ function UrunEkleme() {
         } catch (error) {
             setStatus('Error: ' + error.message);
         }
-
-
-
-
-
-
-
-
-
 
         function UrunEkleme() {
             const [selectedIngredient, setSelectedIngredient] = useState({
@@ -129,24 +118,7 @@ function UrunEkleme() {
                 });
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     };
-
-
 
     return (
         <div className="containerEklemeSayfası">
@@ -199,14 +171,14 @@ function UrunEkleme() {
                             <div key={index}>
                                 <input
                                     type="text"
-                                    value={ingredient.name}
+                                    value={ingredient.Name}
                                     onChange={(e) => handleIngredientChange(index, 'name', e.target.value)}
                                     placeholder="Ingredient Name"
                                     required
                                 />
                                 <input
                                     type="text"
-                                    value={ingredient.ingredientImage}
+                                    value={ingredient.IngredientImage}
                                     onChange={(e) => handleIngredientChange(index, 'ingredientImage', e.target.value)}
                                     placeholder="Ingredient Image URL"
                                     required
@@ -217,8 +189,7 @@ function UrunEkleme() {
                         <div className="containerEklenenUrun">
                             {secilecekIngredient.map(eklenenIngredient => (
                                 <button type='button' className='urunEklemeButon' onClick={() => {
-                                    addIngredient();
-                                    // handleIngredientClick(eklenenIngredient);
+                                    addIngredient(eklenenIngredient.id, eklenenIngredient.Name, eklenenIngredient.IngredientImage);
                                 }}>
                                     <h1>{eklenenIngredient.Name}</h1>
                                     <img src={eklenenIngredient.IngredientImage} alt="" />
@@ -240,7 +211,6 @@ function UrunEkleme() {
 
     );
 }
-
 export default UrunEkleme;
 
 
