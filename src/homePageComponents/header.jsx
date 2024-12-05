@@ -11,6 +11,10 @@ const homePage = () => {
     navigate(`/urunEkleme`)
   }
 
+  const deleteUpdate = () => {
+    navigate(`/deleteUpdate`)
+  }
+
   const [mealArama, setMealArama] = useState([]);
 
   useEffect(() => {
@@ -34,6 +38,7 @@ const homePage = () => {
         <button onClick={() => window.location.href = 'http://localhost:3000/'} className='home'>Home</button>
         <button onClick={urunEklemeClick} className='api'>Ekle</button>
         {/* <input onChange={handleSearch} className='inputx' type="text" placeholder='Search' id="" /> */}
+        <button className='deleteUpdate' onClick={deleteUpdate}>Delete/Update</button>
       </div>
     </div>
 

@@ -430,12 +430,6 @@
       "Name": "Beef Brisket",
       "IngredientImage": "/Ingredients/BeefBrisket.png",
       "popualarIngredients": true
-    },
-    {
-      "id": "4ac2",
-      "Name": "errrr",
-      "IngredientImage": "/Meals/BliniPancakes.png",
-      "popularIngredients": true
     }
   ]
 }

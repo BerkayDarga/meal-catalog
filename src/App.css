@@ -25,7 +25,7 @@
   height: 200px;
 }
 
-.urunEklemeButon img{
+.urunEklemeButon img {
   width: 100px;
   height: 100px;
 }
@@ -112,7 +112,29 @@
 .api:hover {
   background-color: red;
   transition: background-color 0.7s;
+}
 
+.deleteUpdate {
+  width: 100px;
+  height: 34px;
+  margin: 0 28px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.aaa img{
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  position: absolute;
+}
+
+.deleteUpdate:hover {
+  background-color: orange;
+  transition: background-color 0.7s;
 }
 
 .inputx {
@@ -201,6 +223,7 @@
   margin-left: 40px;
   margin-bottom: 30px;
   text-align: center;
+  position: relative;
 }
 
 .mealItems {

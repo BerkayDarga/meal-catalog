@@ -25,7 +25,7 @@ function App() {
         <Route path='/mealDetail/:idMeal' element={<Meal />} />
         <Route path='/ingredientDetail/:idIngredient' element={<Ingredient />} />
         <Route path='/urunEkleme' element={<UrunEkleme />} />
-        <Route path='/delete-update' element={<DeleteUpdate />} />
+        <Route path='/deleteUpdate' element={<DeleteUpdate />} />
         
       </Routes>
       <Wrapper />
