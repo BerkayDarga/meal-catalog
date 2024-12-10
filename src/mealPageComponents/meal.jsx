@@ -41,7 +41,6 @@ function mealPage() {
                                     <img src={aa.IngredientImage} alt="" />
                                     <h3>{aa.Name}</h3>
                                 </div>
-
                             ))}
                         </div>
                     </div>

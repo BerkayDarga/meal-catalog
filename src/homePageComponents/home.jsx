@@ -140,10 +140,6 @@ function home() {
         navigate(`/ingredientDetail/${secilenUrunId}`)
     }
 
-    //input un içi boşsa
-    // if(tıklanma == not exist) {
-
-    // }
     return (
         <div className="">
             <Feature />
@@ -204,7 +200,7 @@ function home() {
                                         </div>
                                         <div className="randomMeals">
                                             {randomMeals.map(randomMeals => (
-                                                <RandomMeals image={randomMeals.ImageUrl} name={randomMeals.Name} />
+                                                <RandomMeals image={randomMeals.ImageUrl} name={randomMeals.Name} buttonclick={() => mealButtonClick(randomMeals.id)} />
                                             ))}
                                         </div>
                                         <div className="RandomMealsTitle">
@@ -213,7 +209,7 @@ function home() {
 
                                         <div className="popularIngredient mealContainer">
                                             {randomIngredients.map(randoms => (
-                                                <RandomIngredients image={randoms.IngredientImage} name={randoms.Name} />
+                                                <RandomIngredients image={randoms.IngredientImage} name={randoms.Name} butonClick={() => urunDetay(randoms.id)}/>
                                             ))}
                                         </div>
                                     </div>

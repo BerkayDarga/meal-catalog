@@ -11,7 +11,6 @@ function popularIngredients(ingredients) {
                 <p>{ingredientName}</p>
             </div>
         </button>
-
     );
 }
 export default popularIngredients;
