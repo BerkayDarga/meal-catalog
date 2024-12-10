@@ -125,7 +125,7 @@
   cursor: pointer;
 }
 
-.aaa img{
+.aaa img {
   width: 10px;
   height: 10px;
   background-color: red;
@@ -216,6 +216,30 @@
   flex-wrap: wrap;
   position: relative;
   padding-bottom: 20px;
+}
+
+.mealSection2 {
+  padding-top: 40px;
+  background-color: #2d2013;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.mealContainer1 input {
+  height: 40px;
+}
+
+.mealContainer1 button {
+  height: 40px;
+  width: 70px;
+}
+
+.mealContainer1 button:hover {
+  background-color: purple;
 }
 
 .mealSection {
