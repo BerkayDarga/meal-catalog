@@ -161,11 +161,128 @@
 }
 
 .aaa img {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   background-color: red;
   position: absolute;
 }
+
+.aaa {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 10;
+}
+
+
+
+
+
+
+
+/* Genel Meal Section Düzenlemeleri */
+.mealSection2 {
+  display: flex;
+  flex-wrap: wrap; /* Yüksekliğe göre öğeleri sarmasına izin verir */
+  gap: 20px; /* Öğeler arasındaki boşluğu ayarlar */
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.mealSection2a {
+  position: relative;
+  width: 270px; /* Her öğenin genişliği */
+  height: 270px;
+  background-color: #f9f9f9; /* Arka plan rengi */
+  border-radius: 8px; /* Kenarları yuvarlar */
+  overflow: hidden; /* İçeriğin taşmasını engeller */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Silme Butonunun Konumu */
+.aaa {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 10; /* Diğer öğelerin üstünde kalmasını sağlar */
+}
+
+.aaa img {
+  width: 20px; /* Silme butonu resmi boyutu */
+  height: 20px;
+}
+
+/* Meal Section (Resim ve Ad) Düzenlemeleri */
+.mealSection {
+  display: flex;
+  flex-direction: column; /* İçerikleri dikey sıraya yerleştirir */
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Resim ile isim arasına boşluk ekler */
+}
+
+.mealSection P {
+  font-size: 15px;
+}
+
+/* mealSectionx div'i içindeki öğeleri ortalamak */
+.mealSectionx {
+  display: flex;
+  justify-content: center; /* Yatayda ortalar */
+  align-items: center;     /* Dikeyde ortalar */
+  height: 100%;            /* Div'in yüksekliği %100 (gerekiyorsa bir yükseklik belirleyin) */
+  text-align: center;      /* İçeriği ortalar (metinler için) */
+}
+
+/* Meal Button içeriği düzenlemeleri */
+.mealSectionx button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mealSectionx img {
+  width: 100px; /* Resim genişliği */
+  height: 100px; /* Resim yüksekliği */
+  object-fit: cover; /* Resmin kutuya sığmasını sağlar */
+  border-radius: 50%; /* Resmi yuvarlak yapar */
+  margin-bottom: 10px; /* Resim ile yazı arasına boşluk */
+}
+
+.mealSectionx p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .deleteUpdate:hover {
   background-color: orange;
@@ -262,18 +379,24 @@
   flex-wrap: wrap;
   position: relative;
   padding-bottom: 20px;
+  gap: 20px; /* Öğeler arasındaki boşluğu ayarlar */
 }
 
+.mealSection2a {
+  position: relative;
+  border-radius: 8px; /* Kenarları yuvarlar */
+  overflow: hidden; /* İçeriğin taşmasını engeller */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-
-
-/* Genel Container düzeni */
 .meal-lista {
   margin: 20px;
   background-color: #2d2013;
 }
 
-/* Başlık düzeni */
 .mealListTitle {
   text-align: center;
   margin-bottom: 20px;
@@ -285,11 +408,10 @@
   margin: 0;
 }
 
-/* Ürün listesi container düzeni */
 .mealListContainer {
   display: flex;
-  flex-wrap: wrap; /* Yanyana sıralanacak elemanlar sığmazsa alt satıra geçer */
-  justify-content: space-evenly; /* Ürünleri eşit aralıklarla yerleştirir */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   background-color: #2d2013;
 }
 
@@ -302,6 +424,30 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   background-color: #fff;
+}
+
+.meal-list {
+  background-color: #2d2013;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.meal-card {
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.meal-card img {
+  width: 270px;
+  height: 270px;
+}
+
+.meal-card h3 {
+  color: #fff;
+  font-size: 15px;
 }
 
 .meal-cardx img {
@@ -610,6 +756,21 @@
   margin-bottom: 1rem;
   color: #333;
 }
+
+.form-groupUruna {
+  display: flex;
+  align-items: center; /* Yatayda hizalamak için */
+}
+
+.xx {
+  display: flex; /* Flexbox kullanarak içerikleri yan yana sıralar */
+  align-items: center; /* Etiket ve checkbox'ı aynı hizada tutar */
+}
+
+.xx label {
+  margin-right: 10px; /* Etiket ile checkbox arasında boşluk bırakır */
+}
+
 
 /* Form grupları */
 .urunEkleme .form-groupUrun,

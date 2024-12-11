@@ -165,14 +165,12 @@ function home() {
                 </div>
                 {
                     (
-                        <div className="meal-list">
+                        <div className="mealContainer">
                             {filteredMeals.length > 0 ? (
                                 filteredMeals.map((meal) => (
                                     <div key={meal.id} className="meal-card">
                                         <img src={meal.ImageUrl} alt={meal.Name} />
                                         <h3>{meal.Name}</h3>
-                                        <p>{meal.Instructions}</p>
-                                        {/* Ingredients listesine gerek yok */}
                                     </div>
                                 ))
                             ) : (   //filteredMeals boş ise

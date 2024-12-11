@@ -241,11 +241,11 @@ function deleteUpdate() {
             </div>
             <div className="mealSection2">
                 {yemek.map(herbiri => (
-                    <div key={herbiri.id}>
+                    <div className="mealSection2a" key={herbiri.id}>
                         <button onClick={() => deleteMeal(herbiri.id)} className="aaa">
                             <img src={DeleteButton} alt="" />
                         </button>
-                        <div className="mealSection">
+                        <div className="mealSectionx">
                             <button onClick={() => handleMealClick(herbiri.Name, herbiri.id)}>
                                 <img src={herbiri.ImageUrl} alt={herbiri.Name} />
                                 <p>{herbiri.Name}</p>

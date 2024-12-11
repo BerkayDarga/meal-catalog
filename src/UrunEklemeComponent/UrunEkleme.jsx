@@ -134,8 +134,10 @@ function UrunEkleme() {
                         <label>Ingredient Image URL:</label>
                         <input type="text" value={IngredientImage} onChange={handleImageChange} />
                     </div>
-                    <div className="form-groupUrun">
-                        <label>Popular Ingredient:</label>
+                    <div className="form-groupUruna">
+                        <div className='xx'>
+                            <label>Popular Ingredient:</label>
+                        </div>
                         <input type="checkbox" checked={popularIngredients} onChange={handlePopularChange} />
                     </div>
                     <button className="buttonUrun" type="submit">Add Ingredient</button>
@@ -198,11 +200,11 @@ function UrunEkleme() {
                         </div>
                     </div>
                     <div className="form-groupYemek">
-                        <button type="button" onClick={toggleLatestMeals}>
+                        <button className=' buttonUrun' type="button" onClick={toggleLatestMeals}>
                             {mealLatestMeals ? 'Remove from Latest Meals' : 'Add to Latest Meals'}
                         </button>
                     </div>
-                    <button type="submit">Add Meal</button>
+                    <button className='buttonUrun' type="submit">Add Meal</button>
                 </form>
                 {/* xxx */}
                 {status && <p className={status === 'Meal successfully added!' ? 'success' : ''}>{status}</p>}
