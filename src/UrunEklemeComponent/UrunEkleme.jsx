@@ -124,7 +124,7 @@ function UrunEkleme() {
         <div className="containerEklemeSayfası">
             {/* Ürün Ekleme */}
             <div className="urunEkleme">
-                <h1>Add a new Ingredient</h1>
+                <h1>Add a New Ingredient</h1>
                 <form onSubmit={postİngredient}>
                     <div className="form-groupUrun">
                         <label>Name:</label>

@@ -3,42 +3,33 @@ import ArjantinBayragi from '../stillImages/arjantinBayragi.png'
 import japonBayragi from '../stillImages/japonBayragi.png'
 import ispanyolBayragi from '../stillImages/ispanyolBayragi.png'
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 function wrapper() {
 
+    const navigate = useNavigate();
 
-    useEffect(() => {   //useEffect bileşen ilk render edildiğinde bir kez çalışır
-        // Başlangıç ve bitiş harflerinin ASCII kodları
-        const startCharCode = 'A'.charCodeAt(0); // 65
-        const endCharCode = 'Z'.charCodeAt(0);   // 90
+    const handleFlagClick = (country) => {
+        navigate(`/countryFilters?country=${country}`);
+    };
 
-        // Döngü ile harfleri bastırma
-        for (let charCode = startCharCode; charCode <= endCharCode; charCode++) {
-            // ASCII kodundan harfi dönüştürme
-            const letter = String.fromCharCode(charCode);
-
-            // Harfi ekrana yazdırma
-            console.log(letter);
-        }
-
-    }, []);
 
 
     return (
         <div className="outerWrapper">
             <h2>Browse Country</h2>
             <div className="flags">
-                <button className='wrapper'>
+                <button className='wrapper' onClick={() => handleFlagClick('turk')}>
                     <img src={TurkishFlag} />
                 </button>
-                <button className='wrapper'>
+                <button className='wrapper' onClick={() => handleFlagClick('japon')}>
                     <img src={japonBayragi} />
                 </button>
-                <button className='wrapper'>
+                <button className='wrapper' onClick={() => handleFlagClick('ispanyol')}>
                     <img src={ispanyolBayragi} />
                 </button >
-                <button className='wrapper'>
+                <button className='wrapper' onClick={() => handleFlagClick('arjantin')}>
                     <img src={ArjantinBayragi} />
                 </button>
             </div>

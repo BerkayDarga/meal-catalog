@@ -10,6 +10,7 @@ import Ingredient from '../src/ingredientComponents/ingredient'
 import Wrapper from '../src/homePageComponents/wrapper'
 import UrunEkleme from '../src/UrunEklemeComponent/UrunEkleme'
 import DeleteUpdate from '../src/homePageComponents/deleteUpdate'
+import CountryFilters from '../src/ulkeyeGoreFiltreleme/countryFilters'
 
 function App() {
 
@@ -26,6 +27,8 @@ function App() {
         <Route path='/ingredientDetail/:idIngredient' element={<Ingredient />} />
         <Route path='/urunEkleme' element={<UrunEkleme />} />
         <Route path='/deleteUpdate' element={<DeleteUpdate />} />
+        {/* <Route path='/countryFilters'></Route> */}
+        <Route path="/countryFilters" element={<CountryFilters />} />
         
       </Routes>
       <Wrapper />

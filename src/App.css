@@ -14,20 +14,55 @@
   justify-content: space-between;
 }
 
+
+
+/* containerEklenenUrun sınıfına stil veriyoruz */
 .containerEklenenUrun {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #d9534f;
+  background-color: #d3d3d3; /* Gri arka plan */
+  display: flex; /* Flexbox ile düzenleme */
+  flex-wrap: wrap; /* Butonlar sığmazsa aşağıya geçsin */
+  justify-content: center; /* Ortalamak için */
+  padding: 20px; /* İçerik boşluğu */
+  gap: 20px; /* Butonlar arasında boşluk */
 }
 
+/* UrunEklemeButon sınıfına stil veriyoruz */
 .urunEklemeButon {
-  width: 100px;
-  height: 200px;
+  background-color: white; /* Beyaz arka plan */
+  border: none; /* Buton kenar çizgilerini kaldır */
+  padding: 15px; /* Buton içindeki boşluk */
+  display: flex; /* Flexbox ile içerik hizalama */
+  flex-direction: column; /* İsim ve resim dikey sıralansın */
+  align-items: center; /* İçerik yatayda ortalanmış olsun */
+  justify-content: center; /* İçerik dikeyde ortalanmış olsun */
+  width: 150px; /* Buton genişliği */
+  height: 200px; /* Buton yüksekliği */
+  border-radius: 10px; /* Köşe yuvarlama */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  cursor: pointer; /* Fareyle üzerine gelince tıklanabilir olduğunu belirten işaret */
+  transition: transform 0.2s ease; /* Hover efekti için animasyon */
+}
+
+/* Hover efekti */
+.urunEklemeButon:hover {
+  transform: translateY(-5px); /* Buton biraz yukarıya kayar */
+}
+
+/* Buton içindeki h1 ve img öğelerinin düzeni */
+.urunEklemeButon h1 {
+  font-size: 18px; /* Başlık font boyutu */
+  text-align: center; /* Başlık ortalanmış olacak */
+  margin-bottom: 10px; /* Başlık ile resim arasına boşluk */
 }
 
 .urunEklemeButon img {
-  width: 100px;
-  height: 100px;
+  max-width: 100%; /* Resim buton genişliğine göre küçülür */
+  max-height: 100px; /* Resmin yüksekliği sınırlı */
+  object-fit: contain; /* Resmin oranını bozmadan sığdırma */
+}
+
+.buttonUrun {
+  background-color: darkblue;
 }
 
 .eklenenUrun {
@@ -227,6 +262,82 @@
   flex-wrap: wrap;
   position: relative;
   padding-bottom: 20px;
+}
+
+
+
+
+/* Genel Container düzeni */
+.meal-lista {
+  margin: 20px;
+  background-color: #2d2013;
+}
+
+/* Başlık düzeni */
+.mealListTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mealListTitle h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Ürün listesi container düzeni */
+.mealListContainer {
+  display: flex;
+  flex-wrap: wrap; /* Yanyana sıralanacak elemanlar sığmazsa alt satıra geçer */
+  justify-content: space-evenly; /* Ürünleri eşit aralıklarla yerleştirir */
+  background-color: #2d2013;
+}
+
+/* Her bir yemek kartının düzeni */
+.meal-cardx {
+  width: 200px; /* Kartların genişliği */
+  margin: 10px; /* Kartlar arasında boşluk */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+}
+
+.meal-cardx img {
+  width: 100%; /* Resim kartın genişliğine uyum sağlar */
+  height: auto;
+  border-radius: 4px;
+}
+
+.meal-cardx h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.meal-cardx p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+/* Cevap olmayan yemekler için yazı */
+.mealListContainer p {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
+
+
+
+
+
+
+
+.mealListTitle {
+  color: #fff;
+  background-color: #2d2013;
 }
 
 .mealContainer1 input {

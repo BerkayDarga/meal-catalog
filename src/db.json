@@ -24,6 +24,7 @@
       "id": "2",
       "Name": "Fish Soup",
       "ImageUrl": "/Meals/FishSoup.png",
+      "country": "turk",
       "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
       "latestMeals": true,
       "ingredient": [
@@ -58,6 +59,7 @@
       "id": "3",
       "Name": "Lamb Pilaf",
       "ImageUrl": "/Meals/LambPilaf.png",
+      "country": "turk",
       "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
       "latestMeals": true,
       "ingredient": [
@@ -97,6 +99,7 @@
       "id": "4",
       "Name": "Potato Salad",
       "ImageUrl": "/Meals/PotatoSalad.png",
+      "country": "arjantin",
       "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
       "latestMeals": false,
       "ingredient": [
@@ -116,6 +119,7 @@
       "id": "5",
       "Name": "Strawberries Roman off",
       "ImageUrl": "/Meals/StrawberriesRomanoff.png",
+      "country": "japon",
       "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
       "latestMeals": true,
       "ingredient": [
@@ -135,6 +139,7 @@
       "id": "6",
       "Name": "Beetroot Soup",
       "ImageUrl": "/Meals/BeetrootSoup.png",
+      "country": "japon",
       "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
       "latestMeals": false,
       "ingredient": [
@@ -159,6 +164,7 @@
       "id": "7",
       "Name": "Cabbage Soup",
       "ImageUrl": "/Meals/CabbageSoup.png",
+      "country": "japon",
       "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
       "latestMeals": false,
       "ingredient": [
@@ -193,6 +199,7 @@
       "id": "8",
       "Name": "Lamb Biryani",
       "ImageUrl": "/Meals/LambBiryani.png",
+      "country": "arjantin",
       "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
       "latestMeals": true,
       "ingredient": [
@@ -242,6 +249,7 @@
       "id": "9",
       "Name": "halloumi burgers",
       "ImageUrl": "/Meals/Burgers.png",
+      "country": "ispanyol",
       "latestMeals": true,
       "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
       "ingredient": [
@@ -286,6 +294,7 @@
       "id": "10",
       "Name": "Sticky Toffee Pudding",
       "ImageUrl": "/Meals/StickyToffeePudding.png",
+      "country": "ispanyol",
       "latestMeals": true,
       "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
       "ingredient": [
@@ -316,6 +325,7 @@
       "Name": "Beef Brisket Pot Roast",
       "latestMeals": true,
       "ImageUrl": "/Meals/BeefBrisketPotRoast.png",
+      "country": "ispanyol",
       "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
       "ingredient": [
         {
@@ -344,6 +354,7 @@
       "id": "12",
       "Name": "Burek",
       "ImageUrl": "/Meals/Burek.png",
+      "country": "arjantin",
       "latestMeals": false,
       "Instructions": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam excepturi commodi iure enim expedita animi eligendi ipsa. Tempore, explicabo!",
       "ingredient": [
