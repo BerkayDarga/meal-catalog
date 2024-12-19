@@ -7,6 +7,10 @@ function mealPage() {
     const [meals, setMeals] = useState([]);
     const [mealsIngredients, setIngredients] = useState([]);
     const { idMeal } = useParams();
+    const { idIngredient } = useParams();
+
+    const navigate = useNavigate();
+    const clickIngredient
 
     useEffect(() => {
         fetch(`http://localhost:4000/meals?id=${idMeal}`)

@@ -6,6 +6,7 @@ function ingredient() {
     // İNGREDİENTDETAİL
 
     const [ingredients, setIngredients] = useState();
+    const [meallar, setMeallar] = useState([]);
     const { idIngredient } = useParams();
 
     useEffect(() => {
@@ -15,34 +16,59 @@ function ingredient() {
             .catch(error => console.log(error))
     }, []);
 
+    // useEffect(() => {
+    //     fetch(`http://localhost:4000/meals`)
+    //         .then(aa => aa.json())
+    //         .then(veris => {
+    //             for (let i = 0; i < veris.length; i++) {
+    //                 for (let index = 0; index < veris[i].ingredient.length; index++) {
+    //                     // console.log(veris[i].Name+" : "+JSON.stringify(element))
+    //                     if (veris[i].ingredient[index].id === idIngredient) {
+    //                         const meall = veris[i]
+    //                         meallar.push(meall);
+    //                         setMeallar(meallar)
+    //                         // console.log(meallar)
+    //                     }
+    //                 }
+    //             }
+    //         })
+    //         .catch(error => console.log(error))
+    // }, [])
 
-    
+
+    useEffect(() => {
+        fetch(`http://localhost:4000/meals`)
+            .then(aa => aa.json())
+            .then(veris => {
+                const newMeallar = []; // Yeni bir array oluştur
+                for (let i = 0; i < veris.length; i++) {
+                    for (let index = 0; index < veris[i].ingredient.length; index++) {
+                        if (veris[i].ingredient[index].id === idIngredient) {
+                            newMeallar.push(veris[i]); // Yeni array'e yemekleri ekle
+                        }
+                    }
+                }
+                setMeallar(newMeallar); // Yeni array'i state'e at
+                console.log(newMeallar); // Yeni state'in doğru şekilde güncellenip güncellenmediğini kontrol et
+            })
+            .catch(error => console.log(error));
+    }, [idIngredient]); // idIngredient değiştiğinde tekrar çalışması için dependency array'e ekledik
+
+
+
+
     return (
-        // <div className="">
-        //     {ingredients.map(ingredientler => (
-        //         <button>
-        //             <img src={ingredientler.IngredientImage} alt="" />
-        //             <p>{ingredientler.Name}</p>
-        //         </button>
-
-
-        //     ))}
-        // </div>
-
-        <div className="">
+        <div className="eee">
             {ingredients && ingredients.length > 0 ? (
                 ingredients.map(ingredientler => (
                     <div className="mealDetail">
                         <div className="mealUp">
-                            <div className="mealWrapper">
-                                <div className="mealDetailLeft">
-                                    <p>{ingredientler.Name}</p>
-                                    <img src={ingredientler.IngredientImage} alt={ingredientler.Name} />
-                                </div>
+                            <div className="mealDetailLeft">
+                                <h1>{ingredientler.Name}</h1>
+                                <img src={ingredientler.IngredientImage} alt={ingredientler.Name} />
                             </div>
-                            <h1 className="bb ">Meals</h1>
-                            <div className="mealIngredient">
-                                <p>ürünün dahil olduğu yemekler burada olacaklar map le de olabilir yemekler bu kısımda çağırılacaklar</p>
+                            <div className="mealDetailRight">
+                                <h1 className="bb ">Meals</h1>
                             </div>
                         </div>
                     </div>
@@ -50,8 +76,15 @@ function ingredient() {
             ) : (
                 <p>No ingredients found</p>  // Eğer veriler gelmezse kullanıcıya mesaj göster
             )}
+            <div className="mealIngredient">
+                {meallar.map(mealss => (
+                    <div className="malzemeler">
+                        <img src={mealss.ImageUrl} alt="" />
+                        <h3> {mealss.Name} </h3>
+                    </div>
+                ))}
+            </div>
         </div>
-
     );
 }
 export default ingredient;
