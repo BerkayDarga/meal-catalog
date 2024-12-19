@@ -15,47 +15,73 @@
 }
 
 .containerEklenenUrun {
-  background-color: #d3d3d3; /* Gri arka plan */
-  display: flex; /* Flexbox ile düzenleme */
-  flex-wrap: wrap; /* Butonlar sığmazsa aşağıya geçsin */
-  justify-content: center; /* Ortalamak için */
-  padding: 20px; /* İçerik boşluğu */
-  gap: 20px; /* Butonlar arasında boşluk */
+  background-color: #d3d3d3;
+  /* Gri arka plan */
+  display: flex;
+  /* Flexbox ile düzenleme */
+  flex-wrap: wrap;
+  /* Butonlar sığmazsa aşağıya geçsin */
+  justify-content: center;
+  /* Ortalamak için */
+  padding: 20px;
+  /* İçerik boşluğu */
+  gap: 20px;
+  /* Butonlar arasında boşluk */
 }
 
 /* UrunEklemeButon sınıfına stil veriyoruz */
 .urunEklemeButon {
-  background-color: white; /* Beyaz arka plan */
-  border: none; /* Buton kenar çizgilerini kaldır */
-  padding: 15px; /* Buton içindeki boşluk */
-  display: flex; /* Flexbox ile içerik hizalama */
-  flex-direction: column; /* İsim ve resim dikey sıralansın */
-  align-items: center; /* İçerik yatayda ortalanmış olsun */
-  justify-content: center; /* İçerik dikeyde ortalanmış olsun */
-  width: 150px; /* Buton genişliği */
-  height: 200px; /* Buton yüksekliği */
-  border-radius: 10px; /* Köşe yuvarlama */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
-  cursor: pointer; /* Fareyle üzerine gelince tıklanabilir olduğunu belirten işaret */
-  transition: transform 0.2s ease; /* Hover efekti için animasyon */
+  background-color: white;
+  /* Beyaz arka plan */
+  border: none;
+  /* Buton kenar çizgilerini kaldır */
+  padding: 15px;
+  /* Buton içindeki boşluk */
+  display: flex;
+  /* Flexbox ile içerik hizalama */
+  flex-direction: column;
+  /* İsim ve resim dikey sıralansın */
+  align-items: center;
+  /* İçerik yatayda ortalanmış olsun */
+  justify-content: center;
+  /* İçerik dikeyde ortalanmış olsun */
+  width: 150px;
+  /* Buton genişliği */
+  height: 200px;
+  /* Buton yüksekliği */
+  border-radius: 10px;
+  /* Köşe yuvarlama */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Hafif gölge */
+  cursor: pointer;
+  /* Fareyle üzerine gelince tıklanabilir olduğunu belirten işaret */
+  transition: transform 0.2s ease;
+  /* Hover efekti için animasyon */
 }
 
 /* Hover efekti */
 .urunEklemeButon:hover {
-  transform: translateY(-5px); /* Buton biraz yukarıya kayar */
+  transform: translateY(-5px);
+  /* Buton biraz yukarıya kayar */
 }
 
 /* Buton içindeki h1 ve img öğelerinin düzeni */
 .urunEklemeButon h1 {
-  font-size: 18px; /* Başlık font boyutu */
-  text-align: center; /* Başlık ortalanmış olacak */
-  margin-bottom: 10px; /* Başlık ile resim arasına boşluk */
+  font-size: 18px;
+  /* Başlık font boyutu */
+  text-align: center;
+  /* Başlık ortalanmış olacak */
+  margin-bottom: 10px;
+  /* Başlık ile resim arasına boşluk */
 }
 
 .urunEklemeButon img {
-  max-width: 100%; /* Resim buton genişliğine göre küçülür */
-  max-height: 100px; /* Resmin yüksekliği sınırlı */
-  object-fit: contain; /* Resmin oranını bozmadan sığdırma */
+  max-width: 100%;
+  /* Resim buton genişliğine göre küçülür */
+  max-height: 100px;
+  /* Resmin yüksekliği sınırlı */
+  object-fit: contain;
+  /* Resmin oranını bozmadan sığdırma */
 }
 
 .buttonUrun {
@@ -178,20 +204,27 @@
 /* Genel Meal Section Düzenlemeleri */
 .mealSection2 {
   display: flex;
-  flex-wrap: wrap; /* Yüksekliğe göre öğeleri sarmasına izin verir */
-  gap: 20px; /* Öğeler arasındaki boşluğu ayarlar */
+  flex-wrap: wrap;
+  /* Yüksekliğe göre öğeleri sarmasına izin verir */
+  gap: 20px;
+  /* Öğeler arasındaki boşluğu ayarlar */
   justify-content: flex-start;
   padding: 20px;
 }
 
 .mealSection2a {
   position: relative;
-  width: 270px; /* Her öğenin genişliği */
+  width: 270px;
+  /* Her öğenin genişliği */
   height: 270px;
-  background-color: #f9f9f9; /* Arka plan rengi */
-  border-radius: 8px; /* Kenarları yuvarlar */
-  overflow: hidden; /* İçeriğin taşmasını engeller */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  background-color: #f9f9f9;
+  /* Arka plan rengi */
+  border-radius: 8px;
+  /* Kenarları yuvarlar */
+  overflow: hidden;
+  /* İçeriğin taşmasını engeller */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Hafif gölge */
   text-align: center;
   padding: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -205,21 +238,25 @@
   border: none;
   cursor: pointer;
   padding: 5px;
-  z-index: 10; /* Diğer öğelerin üstünde kalmasını sağlar */
+  z-index: 10;
+  /* Diğer öğelerin üstünde kalmasını sağlar */
 }
 
 .aaa img {
-  width: 20px; /* Silme butonu resmi boyutu */
+  width: 20px;
+  /* Silme butonu resmi boyutu */
   height: 20px;
 }
 
 /* Meal Section (Resim ve Ad) Düzenlemeleri */
 .mealSection {
   display: flex;
-  flex-direction: column; /* İçerikleri dikey sıraya yerleştirir */
+  flex-direction: column;
+  /* İçerikleri dikey sıraya yerleştirir */
   justify-content: center;
   align-items: center;
-  gap: 10px; /* Resim ile isim arasına boşluk ekler */
+  gap: 10px;
+  /* Resim ile isim arasına boşluk ekler */
 }
 
 .mealSection P {
@@ -229,10 +266,14 @@
 /* mealSectionx div'i içindeki öğeleri ortalamak */
 .mealSectionx {
   display: flex;
-  justify-content: center; /* Yatayda ortalar */
-  align-items: center;     /* Dikeyde ortalar */
-  height: 100%;            /* Div'in yüksekliği %100 (gerekiyorsa bir yükseklik belirleyin) */
-  text-align: center;      /* İçeriği ortalar (metinler için) */
+  justify-content: center;
+  /* Yatayda ortalar */
+  align-items: center;
+  /* Dikeyde ortalar */
+  height: 100%;
+  /* Div'in yüksekliği %100 (gerekiyorsa bir yükseklik belirleyin) */
+  text-align: center;
+  /* İçeriği ortalar (metinler için) */
 }
 
 /* Meal Button içeriği düzenlemeleri */
@@ -247,11 +288,16 @@
 }
 
 .mealSectionx img {
-  width: 100px; /* Resim genişliği */
-  height: 100px; /* Resim yüksekliği */
-  object-fit: cover; /* Resmin kutuya sığmasını sağlar */
-  border-radius: 50%; /* Resmi yuvarlak yapar */
-  margin-bottom: 10px; /* Resim ile yazı arasına boşluk */
+  width: 100px;
+  /* Resim genişliği */
+  height: 100px;
+  /* Resim yüksekliği */
+  object-fit: cover;
+  /* Resmin kutuya sığmasını sağlar */
+  border-radius: 50%;
+  /* Resmi yuvarlak yapar */
+  margin-bottom: 10px;
+  /* Resim ile yazı arasına boşluk */
 }
 
 .mealSectionx p {
@@ -357,14 +403,18 @@
   flex-wrap: wrap;
   position: relative;
   padding-bottom: 20px;
-  gap: 20px; /* Öğeler arasındaki boşluğu ayarlar */
+  gap: 20px;
+  /* Öğeler arasındaki boşluğu ayarlar */
 }
 
 .mealSection2a {
   position: relative;
-  border-radius: 8px; /* Kenarları yuvarlar */
-  overflow: hidden; /* İçeriğin taşmasını engeller */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  border-radius: 8px;
+  /* Kenarları yuvarlar */
+  overflow: hidden;
+  /* İçeriğin taşmasını engeller */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Hafif gölge */
   text-align: center;
   padding: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -395,8 +445,10 @@
 
 /* Her bir yemek kartının düzeni */
 .meal-cardx {
-  width: 200px; /* Kartların genişliği */
-  margin: 10px; /* Kartlar arasında boşluk */
+  width: 200px;
+  /* Kartların genişliği */
+  margin: 10px;
+  /* Kartlar arasında boşluk */
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -404,7 +456,7 @@
   background-color: #fff;
 }
 
-.mealIngredienta p{
+.mealIngredienta p {
   color: #fff;
   position: absolute;
   top: 0;
@@ -422,7 +474,8 @@
   width: 100%;
 }
 
-.ccc, .mealIngredient {
+.ccc,
+.mealIngredient {
   width: 100%;
 }
 
@@ -467,7 +520,8 @@
 }
 
 .meal-cardx img {
-  width: 100%; /* Resim kartın genişliğine uyum sağlar */
+  width: 100%;
+  /* Resim kartın genişliğine uyum sağlar */
   height: auto;
   border-radius: 4px;
 }
@@ -717,6 +771,17 @@
   color: #fff;
 }
 
+.malzemeler button {
+  all: unset;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
 .malzemeler img {
   width: 200px;
   height: 200px;
@@ -770,16 +835,20 @@
 
 .form-groupUruna {
   display: flex;
-  align-items: center; /* Yatayda hizalamak için */
+  align-items: center;
+  /* Yatayda hizalamak için */
 }
 
 .xx {
-  display: flex; /* Flexbox kullanarak içerikleri yan yana sıralar */
-  align-items: center; /* Etiket ve checkbox'ı aynı hizada tutar */
+  display: flex;
+  /* Flexbox kullanarak içerikleri yan yana sıralar */
+  align-items: center;
+  /* Etiket ve checkbox'ı aynı hizada tutar */
 }
 
 .xx label {
-  margin-right: 10px; /* Etiket ile checkbox arasında boşluk bırakır */
+  margin-right: 10px;
+  /* Etiket ile checkbox arasında boşluk bırakır */
 }
 
 

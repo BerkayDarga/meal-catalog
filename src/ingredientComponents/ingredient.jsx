@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function ingredient() {
 
@@ -8,6 +8,11 @@ function ingredient() {
     const [ingredients, setIngredients] = useState();
     const [meallar, setMeallar] = useState([]);
     const { idIngredient } = useParams();
+
+    const nav = useNavigate();
+    const clickMeal = (disaridanMealId) => {
+        nav(`/mealDetail/${disaridanMealId}`)
+    }
 
     useEffect(() => {
         fetch(`http://localhost:4000/Ingredients?id=${idIngredient}`)
@@ -79,8 +84,10 @@ function ingredient() {
             <div className="mealIngredient">
                 {meallar.map(mealss => (
                     <div className="malzemeler">
-                        <img src={mealss.ImageUrl} alt="" />
-                        <h3> {mealss.Name} </h3>
+                        <button onClick={() => clickMeal(mealss.id)}>
+                            <img src={mealss.ImageUrl} alt="" />
+                            <h3> {mealss.Name} </h3>
+                        </button>
                     </div>
                 ))}
             </div>

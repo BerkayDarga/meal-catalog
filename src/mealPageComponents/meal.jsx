@@ -10,7 +10,9 @@ function mealPage() {
     const { idIngredient } = useParams();
 
     const navigate = useNavigate();
-    const clickIngredient
+    const clickIngredient = (clickOlunanIngredient) => {
+        navigate(`/ingredientDetail/${clickOlunanIngredient}`)
+    }
 
     useEffect(() => {
         fetch(`http://localhost:4000/meals?id=${idMeal}`)
@@ -42,7 +44,9 @@ function mealPage() {
                         <div className="mealIngredient">
                             {mealss.ingredient.map(aa => (
                                 <div className="malzemeler">
-                                    <img src={aa.IngredientImage} alt="" />
+                                    <button onClick={() => clickIngredient(aa.id)}>
+                                        <img src={aa.IngredientImage} alt="" />
+                                    </button>
                                     <h3>{aa.Name}</h3>
                                 </div>
                             ))}
@@ -56,9 +60,9 @@ function mealPage() {
                 </div>
             ))}
 
-            {mealsIngredients.map(ingredients => (
+            {/* {mealsIngredients.map(ingredients => (
                 <p>{ingredients.Name}</p>
-            ))}
+            ))} */}
         </div>
     );
 
