@@ -1,3 +1,5 @@
+Meal App
+
 Projeyi ayağa kaldırmak web çalıştırılır.
 
 npm run dev
